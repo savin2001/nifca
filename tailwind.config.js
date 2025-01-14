@@ -9,11 +9,11 @@ export default {
     themes: [
       {
         mytheme: {
-          primary: "#a991f7",
-          secondary: "#f6d860",
-          accent: "#37cdbe",
-          neutral: "#3d4451",
-          "base-100": "#ffffff",
+          primary: "#A62D5C",  // NIFC primary color
+          secondary: "#205473", // NIFC secondary color
+          accent: "#FFFFFF",    // Accent color
+          neutral: "#000000",   // Neutral color
+          "base-100": "#FFFFFF", // Base background color (white)
         },
       },
     ],
