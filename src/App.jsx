@@ -12,6 +12,9 @@ import GreenFinance from './pages/GreenFinance';
 import Laws from './pages/Laws';
 import Leadership from './pages/Leadership';
 import WhyNairobi from './pages/WhyNairobi';
+import NIFCFirm from './pages/NIFCFirm';
+import Media from './pages/Media';
+import A from './pages/Media';
 
 function App() {
   return (
@@ -20,16 +23,16 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/application-process" element={<ApplicationProcess/>} />
+          <Route path="/apply" element={<ApplicationProcess/>} />
           <Route path="/enquiry" element={<Enquiry/>} />
           <Route path="/events" element={<Events/>} />
           <Route path="/green-finance" element={<GreenFinance/>} />
           <Route path="/laws" element={<Laws/>} />
           <Route path="/leadership" element={<Leadership/>} />
-          <Route path="/enquiry" element={<Enquiry/>} />
+          <Route path="/becoming-nifc-firm" element={<NIFCFirm/>} />
           <Route path="/why-nairobi" element={<WhyNairobi/>} />
-          <Route path="/enquiry" element={<Enquiry/>} />
-          <Route path="/enquiry" element={<Enquiry/>} />
+          <Route path="/media" element={<Media/>} />
+          <Route path="/apply" element={<Enquiry/>} />
           <Route path="/enquiry" element={<Enquiry/>} />
           <Route path="/enquiry" element={<Enquiry/>} />
           <Route path="/enquiry" element={<Enquiry/>} />
