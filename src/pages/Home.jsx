@@ -60,9 +60,9 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <h3 className="sm:text-xl md:text-3xl uppercase mb-24">
+          <a className="btn btn-outline-neutral sm:text-xl md:text-3xl uppercase mb-24" href="/why-nairobi">
             Why Nairobi
-          </h3>
+          </a>
         </div>
       </div>
       {/*  */}

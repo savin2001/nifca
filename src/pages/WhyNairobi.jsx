@@ -2,7 +2,7 @@ import React from 'react'
 
 const WhyNairobi = () => {
   return (
-    <div className="bg-base-200 h-2/3 flex justify-center items-center uppercase sm:text-lg md:text-6xl font-light">
+    <div className="bg-base-200 h-screen flex justify-center items-center uppercase sm:text-lg md:text-6xl font-light">
     <h1>Why Nairobi</h1>
   </div>
   )

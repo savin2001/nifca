@@ -1,6 +1,7 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import "./App.css";
+import MainLayout from './layout/MainLayout';
 import Home from './pages/Home';
 import About from './pages/About';
 import ApplicationProcess from './pages/ApplicationProcess';
@@ -10,7 +11,7 @@ import Events from './pages/Events';
 import GreenFinance from './pages/GreenFinance';
 import Laws from './pages/Laws';
 import Leadership from './pages/Leadership';
-import MainLayout from './layout/MainLayout';
+import WhyNairobi from './pages/WhyNairobi';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
           <Route path="/laws" element={<Laws/>} />
           <Route path="/leadership" element={<Leadership/>} />
           <Route path="/enquiry" element={<Enquiry/>} />
-          <Route path="/enquiry" element={<Enquiry/>} />
+          <Route path="/why-nairobi" element={<WhyNairobi/>} />
           <Route path="/enquiry" element={<Enquiry/>} />
           <Route path="/enquiry" element={<Enquiry/>} />
           <Route path="/enquiry" element={<Enquiry/>} />
