@@ -1,5 +1,6 @@
 // src/components/Navbar.jsx
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link
 import Logo from "../assets/nifca-logo.png";
 
 const Navbar = () => {
@@ -37,22 +38,22 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2"
             >
               <li className="uppercase font-light">
-                <a href="/about">About the NIFC</a>
+                <Link to="/about">About the NIFC</Link>
               </li>
               <li className="uppercase font-light">
-                <a href="/why-nairobi">Why Nairobi</a>
+                <Link to="/why-nairobi">Why Nairobi</Link>
               </li>
               <li className="uppercase font-light">
-                <a href="/becoming-nifc-firm">Becoming a NIFC Firm</a>
+                <Link to="/becoming-nifc-firm">Becoming a NIFC Firm</Link>
               </li>
               <li className="uppercase font-light">
-                <a href="/media">Media</a>
+                <Link to="/media">Media</Link>
               </li>
             </ul>
           </div>
           {/* Brand Logo */}
-          <a
-            href="/"
+          <Link
+            to="/"
             className="flex items-center gap-2 btn btn-ghost btn-lg text-neutral text-sm font-medium uppercase"
           >
             <img
@@ -64,23 +65,23 @@ const Navbar = () => {
               Nairobi International <br />
               Financial Centre
             </span>
-          </a>
+          </Link>
         </div>
 
         {/* Navbar Center */}
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li className="uppercase font-light">
-              <a href="/about">About the NIFC</a>
+              <Link to="/about">About the NIFC</Link>
             </li>
             <li className="uppercase font-light">
-              <a href="/why-nairobi">Why Nairobi</a>
+              <Link to="/why-nairobi">Why Nairobi</Link>
             </li>
             <li className="uppercase font-light">
-              <a href="/becoming-nifc-firm">Becoming a NIFC Firm</a>
+              <Link to="/becoming-nifc-firm">Becoming a NIFC Firm</Link>
             </li>
             <li className="uppercase font-light">
-              <a href="/media">Media</a>
+              <Link to="/media">Media</Link>
             </li>
           </ul>
         </div>
@@ -103,12 +104,12 @@ const Navbar = () => {
               />
             </svg>
           </button>
-          <a
-            href="/apply"
+          <Link
+            to="/apply"
             className="btn btn-neutral btn-sm uppercase font-light rounded-none"
           >
             Start Application
-          </a>
+          </Link>
         </div>
       </div>
     </div>
