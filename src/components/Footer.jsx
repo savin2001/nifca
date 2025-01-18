@@ -1,104 +1,163 @@
 // src/components/Footer.jsx
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link
+import Logo from "../assets/nifca-logo.png";
+import VisionLogo from "../assets/Vision2030_logo.png";
+import SocialMedia from "./SocialMedia";
+
 
 const Footer = () => {
   return (
     <footer className="bg-base-100 text-neutral py-10">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Logo and Description */}
-          <div>
-            <div className="flex items-center space-x-2">
-              <img
-                src="/path-to-your-logo.png" // Replace with the actual logo path
-                alt="NIFC Logo"
-                className="w-12 h-12"
-              />
-              <span className="text-xl font-bold">
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-8">
+          {/* Column 1: Logo */}
+          <div className="col-span-2">
+            <div className="flex items-center mb-4">
+              <img src={Logo} alt="NIFC Logo" className="w-20" />
+              <span className="uppercase text-sm font-normal">
                 Nairobi International <br /> Financial Centre
               </span>
             </div>
-            <p className="mt-4 text-sm">
-              The Nairobi International Financial Centre (NIFC) is a business
-              and financial services hub facilitating investment into Africa and
-              beyond.
-            </p>
+            <img src={VisionLogo} alt="Vision Logo" className="w-48" />
           </div>
 
-          {/* Quick Links */}
+          {/* Column 2: About the NIFC */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Quick Links</h3>
+            <h3 className="font-light uppercase text-lg mb-4">
+              About the NIFC
+            </h3>
             <ul className="space-y-2">
               <li>
                 <a
-                  href="#about"
+                  href="#"
                   className="text-neutral hover:text-primary transition"
                 >
-                  About Us
+                  The NIFC
                 </a>
               </li>
               <li>
                 <a
-                  href="#services"
+                  href="#"
                   className="text-neutral hover:text-primary transition"
                 >
-                  Services
+                  Leadership
                 </a>
               </li>
               <li>
                 <a
-                  href="#partners"
+                  href="#"
                   className="text-neutral hover:text-primary transition"
                 >
-                  Partners
+                  Laws
                 </a>
               </li>
               <li>
                 <a
-                  href="#contact"
+                  href="#"
                   className="text-neutral hover:text-primary transition"
                 >
-                  Contact
+                  Public Register
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Contact Information */}
+          {/* Column 3: Why Nairobi */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Contact Us</h3>
+            <h3 className="font-light uppercase text-lg mb-4">Why Nairobi</h3>
+            <ul className="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  className="text-neutral hover:text-primary transition"
+                >
+                  Target Sectors
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-neutral hover:text-primary transition"
+                >
+                  Starting a Business
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-neutral hover:text-primary transition"
+                >
+                  Application Process
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-neutral hover:text-primary transition"
+                >
+                  Operating in the NIFC
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 4: Media */}
+          <div>
+            <h3 className="font-light uppercase text-lg mb-4">Media</h3>
+            <ul className="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  className="text-neutral hover:text-primary transition"
+                >
+                  Press Releases
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-neutral hover:text-primary transition"
+                >
+                  Media Kit
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-neutral hover:text-primary transition"
+                >
+                  Events
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-neutral hover:text-primary transition"
+                >
+                  Resources
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 5: Contact Information */}
+          <div>
+            <h3 className="font-light uppercase text-lg mb-4">Contact Us</h3>
             <p className="text-sm">
-              <strong>Address:</strong> NIFC Towers, Nairobi, Kenya
+              <strong>Address:</strong> Treasury Building, Harambee Avenue,
+              Nairobi, Kenya
             </p>
             <p className="text-sm mt-2">
-              <strong>Email:</strong> info@nifc.co.ke
+              <strong>Email:</strong> info@nifc.ke
             </p>
             <p className="text-sm mt-2">
-              <strong>Phone:</strong> +254 700 000 000
+              <strong>Phone:</strong> +254 792 000 555
             </p>
-            <div className="mt-4 space-x-4">
-              <a
-                href="#"
-                className="text-neutral hover:text-primary transition text-2xl"
-              >
-                {/* Social Media Icons */}
-                <i className="fab fa-facebook"></i>
-              </a>
-              <a
-                href="#"
-                className="text-neutral hover:text-primary transition text-2xl"
-              >
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a
-                href="#"
-                className="text-neutral hover:text-primary transition text-2xl"
-              >
-                <i className="fab fa-linkedin"></i>
-              </a>
-            </div>
           </div>
         </div>
+
+        <SocialMedia/>
 
         {/* Footer Bottom */}
         <div className="mt-8 text-center text-sm border-t border-gray-600 pt-4">

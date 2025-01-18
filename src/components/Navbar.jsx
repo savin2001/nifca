@@ -38,7 +38,7 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2"
             >
               <li className="uppercase font-light">
-                <Link to="/about">Discover NIFC</Link>
+                <Link to="/discover-nifc">Discover NIFC</Link>
               </li>
               <li className="uppercase font-light">
                 <Link to="/why-nairobi">Why Nairobi</Link>
@@ -72,7 +72,7 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li className="uppercase font-light">
-              <Link to="/about">Discover NIFC</Link>
+              <Link to="/discover-nifc">Discover NIFC</Link>
             </li>
             <li className="uppercase font-light">
               <Link to="/why-nairobi">Why Nairobi</Link>

@@ -22,7 +22,7 @@ function App() {
       <MainLayout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/discover-nifc" element={<About />} />
           <Route path="/apply" element={<ApplicationProcess/>} />
           <Route path="/enquiry" element={<Enquiry/>} />
           <Route path="/events" element={<Events/>} />
