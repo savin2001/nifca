@@ -10,14 +10,18 @@ const FloatingSocialButton = () => {
   };
 
   return (
-    <div className="fixed bottom-6 right-6">
-      {/* Floating Button */}
-      <button
-        onClick={toggleMenu}
-        className="bg-primary text-white p-4 rounded-full shadow-lg focus:outline-none transition-transform transform hover:scale-110"
-      >
-        +
-      </button>
+    <div className="fixed bottom-6 right-6 z-50">
+      {/* Floating Button with DaisyUI Swap */}
+      <div className="swap swap-rotate">
+        {/* Toggle Button */}
+        <button
+        //   onClick={toggleMenu}
+          className="bg-primary text-white p-4 rounded-full shadow-lg focus:outline-none transition-transform transform hover:scale-110 text-xl"
+        >
+          {/* When Closed: Show "+" */}
+          {!isOpen ? <FaFacebookF className="swap-off" /> : <span className="swap-on text-xl text-base-100">-</span>}
+        </button>
+      </div>
 
       {/* Social Links Menu */}
       {isOpen && (
