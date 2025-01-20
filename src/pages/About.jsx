@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import BreadCrumbMenu from "../components/BreadCrumbMenu";
+import ObjectivesCarousel from "../components/ObjectivesCarousel";
 
 const About = () => {
   return (
@@ -66,43 +67,7 @@ const About = () => {
             innovative financial centre
           </h2>
         </div>
-        <div className="w-full flex flex-col justify-center items-center h-3/5 bg-base-200 sm:text-lg md:text-3xl">
-          <h2 className="text-center uppercase md:w-2/3 mb-6">Objectives</h2>
-
-          {/* Carousel container */}
-          <div className="relative w-full max-w-6xl">
-            {/* Carousel items */}
-            <div className="carousel flex space-x-4 overflow-x-scroll scrollbar-hide">
-              {/* Individual cards */}
-              {Array.from({ length: 10 }).map((_, index) => (
-                <div key={index} className="carousel-item flex-shrink-0 w-1/5">
-                  <div
-                    className={`card w-full h-48 bg-base-100 shadow-md flex flex-col justify-end p-4 ${
-                      index > 4 ? "opacity-50" : ""
-                    }`}
-                  >
-                    <h3 className="text-sm md:text-lg font-bold">
-                      Objective Title {index + 1}
-                    </h3>
-                    {index === 1 && (
-                      <p className="text-sm text-gray-500">
-                        Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris...
-                      </p>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-            {/* Navigation buttons */}
-            <button className="absolute right-12 top-0 transform -translate-y-1/2 btn btn-circle btn-sm">
-              ❮
-            </button>
-            <button className="absolute right-2 top-0 transform -translate-y-1/2 btn btn-circle btn-sm">
-              ❯
-            </button>
-          </div>
-        </div>
+        <ObjectivesCarousel/>
       </div>
     </div>
   );
