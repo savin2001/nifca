@@ -14,7 +14,6 @@ const BreadCrumbMenu = () => {
               className="flex items-center text-primary hover:text-secondary"
             >
               <FaHome className="mr-1" />
-              Home
             </Link>
           </li>
           {/* Discover the NIFC */}

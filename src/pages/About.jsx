@@ -33,7 +33,7 @@ const About = () => {
       {/* Section 2 */}
       <div className="h-screen flex flex-col justify-center items-center font-light">
         <div className="w-full flex justify-center items-center h-1/3 bg-base-100 sm:text-lg md:text-2xl ">
-          <h2 className="text-center md:w-2/3">
+          <h2 className="text-center md:w-1/2">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
             aspernatur recusandae sequi quaerat iusto impedit, doloribus quas
             odit neque possimus!

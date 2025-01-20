@@ -22,7 +22,7 @@ export default function ObjectivesCarousel() {
   };
 
   return (
-    <div className="w-full flex flex-col justify-center items-center h-3/5 bg-base-200 sm:text-lg md:text-3xl relative pb-12">
+    <div className="w-full flex flex-col justify-center items-center h-3/5 bg-base-200 sm:text-lg md:text-3xl relative py-12">
       <h2 className="text-center uppercase md:w-2/3 mb-12">Objectives</h2>
 
       {/* Carousel container */}
