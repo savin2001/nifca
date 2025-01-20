@@ -67,7 +67,15 @@ const About = () => {
             innovative financial centre
           </h2>
         </div>
-        <ObjectivesCarousel/>
+        <ObjectivesCarousel />
+        <div className="bg-base-300 w-full  p-12 flex justify-between space-x-8">
+          <button className="capitalize flex-grow btn btn-ghost btn-lg text-3xl font-light">
+            Start application ❯
+          </button>
+          <button className="capitalize flex-grow btn btn-ghost  btn-lg text-3xl font-light">
+            Make an enquiry ❯
+          </button>
+        </div>
       </div>
     </div>
   );
