@@ -14,7 +14,8 @@ import Leadership from './pages/Leadership';
 import WhyNairobi from './pages/WhyNairobi';
 import NIFCFirm from './pages/NIFCFirm';
 import Media from './pages/Media';
-import A from './pages/Media';
+import Articles from './pages/Articles';
+import Article from './pages/Article';
 
 function App() {
   return (
@@ -33,8 +34,8 @@ function App() {
           <Route path="/why-nairobi" element={<WhyNairobi/>} />
           <Route path="/media" element={<Media/>} />
           <Route path="/apply" element={<Enquiry/>} />
-          <Route path="/enquiry" element={<Enquiry/>} />
-          <Route path="/enquiry" element={<Enquiry/>} />
+          <Route path="/press-releases" element={<Articles/>} />
+          <Route path="/article" element={<Article/>} />
           <Route path="/enquiry" element={<Enquiry/>} />
           <Route path="/enquiry" element={<Enquiry/>} />
           <Route path="/enquiry" element={<Enquiry/>} />

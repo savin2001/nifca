@@ -15,17 +15,16 @@ const FloatingSocialButton = () => {
       <div className="swap swap-rotate">
         {/* Toggle Button */}
         <button
-        //   onClick={toggleMenu}
-          className="bg-primary text-white p-4 rounded-full shadow-lg focus:outline-none transition-transform transform hover:scale-110 text-xl"
+          onClick={toggleMenu}
+          className="bg-primary text-white p-4 rounded-full shadow-lg focus:outline-none transition-transform transform hover:scale-110 text-xl transition-all duration-300 ease-in-out"
         >
-          {/* When Closed: Show "+" */}
-          {!isOpen ? <FaFacebookF className="swap-off" /> : <span className="swap-on text-xl text-base-100">-</span>}
+          {!isOpen ? <FaFacebookF className="swap-off" /> : "-"}
         </button>
       </div>
 
       {/* Social Links Menu */}
       {isOpen && (
-        <div className="bg-base-100 shadow-lg rounded-lg p-4 mt-3 flex flex-col items-center space-y-4">
+        <div className="bg-base-100 shadow-lg rounded-lg p-4 mt-3 flex flex-col items-center space-y-4 transition-all duration-300 ease-in-out">
           <Link
             to="#"
             className="text-neutral hover:text-primary transition text-2xl"
