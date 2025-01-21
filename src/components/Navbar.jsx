@@ -61,7 +61,7 @@ const Navbar = () => {
               alt="NIFC Logo"
               className="h-16 w-16 object-contain"
             />
-            <span className="text-left">
+            <span className="text-left hidden lg:block">
               Nairobi International <br />
               Financial Centre
             </span>
