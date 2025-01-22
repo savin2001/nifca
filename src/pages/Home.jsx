@@ -112,7 +112,9 @@ const Home = () => {
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
-              <p className="text-primary font-light text-xs uppercase pb-4">3 JAN 2025</p>
+                <p className="text-primary font-light text-xs uppercase pb-4">
+                  3 JAN 2025
+                </p>
                 <h3 className="text-lg font-semibold mb-4">
                   The Future of Finance in Africa
                 </h3>
@@ -138,7 +140,9 @@ const Home = () => {
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
-                <p className="text-primary font-light text-xs uppercase pb-4">15 DEC 2024</p>
+                <p className="text-primary font-light text-xs uppercase pb-4">
+                  15 DEC 2024
+                </p>
                 <h3 className="text-lg font-semibold mb-4">
                   Why Nairobi is the Business Hub of Africa
                 </h3>
@@ -164,7 +168,9 @@ const Home = () => {
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
-              <p className="text-primary font-light text-xs uppercase pb-4">7 nov 2024</p>
+                <p className="text-primary font-light text-xs uppercase pb-4">
+                  7 nov 2024
+                </p>
                 <h3 className="text-lg font-semibold mb-4">
                   Innovations Driving Growth in Kenya
                 </h3>
@@ -284,56 +290,68 @@ const Home = () => {
           <div className="sm:text-md md:text-2xl w-full flex justify-center items-center text-center">
             <div className="w-2/3">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-                blanditiis amet illo nisi autem nulla fugiat id, aperiam esse
-                voluptate.
+                Our focus is on sectors that drive sustainable growth and
+                innovation. We aim to empower organizations with tailored
+                solutions to meet their unique challenges and opportunities.
               </p>
             </div>
           </div>
           <div className="sm:text-md md:text-xl w-full flex justify-center items-center text-center m-14">
             <div className="grid grid-cols-3 grid-rows-2 h-fit gap-4 p-4">
               {/* First column spanning 2 rows */}
-              <div className="row-span-2">
-                <div className="card bg-base-300 shadow-md h-full rounded-none">
+              <div className="row-span-2 hover:text-primary">
+                <Link
+                  to="/green-finance"
+                  className="card bg-base-300 shadow-md h-full rounded-none"
+                >
                   <div className="card-body">
-                    <h2 className="card-title ">Column 1</h2>
+                    <h2 className="card-title ">Green Finance</h2>
                   </div>
-                </div>
+                </Link>
               </div>
 
               {/* Second column */}
-              <div>
-                <div className="card bg-base-300 shadow-md h-full rounded-none">
+              <div className="hover:text-primary">
+                <Link
+                  to="/investment-funds"
+                  className="card bg-base-300 shadow-md h-full rounded-none"
+                >
                   <div className="card-body">
-                    <h2 className="card-title ">Column 2, Row 1</h2>
-                    <p>Content for row 1 in column 2.</p>
+                    <h2 className="card-title ">Investment Funds</h2>
                   </div>
-                </div>
+                </Link>
               </div>
-              <div>
-                <div className="card bg-base-300 shadow-md h-full rounded-none">
+              <div className="hover:text-primary">
+                <Link
+                  to="/multinationals"
+                  className="card bg-base-300 shadow-md h-full rounded-none"
+                >
                   <div className="card-body">
-                    <h2 className="card-title ">Column 2, Row 2</h2>
-                    <p>Content for row 2 in column 2.</p>
+                    <h2 className="card-title ">Multinational HQs</h2>
                   </div>
-                </div>
+                </Link>
               </div>
 
               {/* Third column */}
-              <div>
-                <div className="card bg-base-300 shadow-md h-full rounded-none">
+              <div className="hover:text-primary">
+                <Link
+                  to="/professional-services"
+                  className="card bg-base-300 shadow-md h-full rounded-none"
+                >
                   <div className="card-body">
-                    <h2 className="card-title ">Column 3, Row 1</h2>
+                    <h2 className="card-title ">Professional Services</h2>
                   </div>
-                </div>
+                </Link>
               </div>
-              <div>
-                <div className="card bg-base-300 shadow-md h-full rounded-none">
+              <div className="hover:text-primary">
+                <Link
+                  to="/other"
+                  className="card bg-base-300 shadow-md h-full rounded-none"
+                >
                   <div className="card-body">
-                    <h2 className="card-title ">Column 3, Row 2</h2>
-                    <p>Content for row 2 in column 3.</p>
+                    <h2 className="card-title ">Other</h2>
                   </div>
-                </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -351,38 +369,70 @@ const Home = () => {
               <div className="grid grid-cols-4 grid-rows-1 h-full gap-4 p-4">
                 {/* Column 1 */}
                 <div>
-                  <div className="card bg-base-300 shadow-md h-full rounded-none">
-                    <div className="card-body">
-                      <h2 className="card-title ">Target Sector</h2>
+                  <Link to="/target-sector">
+                    <div className="card bg-base-100 image-full h-fit rounded-none transition-shadow ease-in-out duration-300 hover:rounded-lg hover:shadow-xl">
+                      <figure>
+                        <img
+                          src="https://images.unsplash.com/photo-1669127300649-940337f1487e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmFpcm9iaXxlbnwwfHwwfHx8MA%3D%3D"
+                          alt="Green Finance"
+                        />
+                      </figure>
+                      <div className="card-body flex w-full justify-center rounded-none">
+                        <h2 className="card-title">Target sectors</h2>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 </div>
 
                 {/* Column 2 */}
                 <div>
-                  <div className="card bg-base-300 shadow-md h-full rounded-none">
-                    <div className="card-body">
-                      <h2 className="card-title ">Starting a Business</h2>
+                  <Link to="/start-business">
+                    <div className="card bg-base-100 image-full h-fit rounded-none transition-shadow ease-in-out duration-300 hover:rounded-lg hover:shadow-xl">
+                      <figure>
+                        <img
+                          src="https://images.unsplash.com/photo-1669127300649-940337f1487e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmFpcm9iaXxlbnwwfHwwfHx8MA%3D%3D"
+                          alt="Green Finance"
+                        />
+                      </figure>
+                      <div className="card-body flex w-full justify-center rounded-none">
+                        <h2 className="card-title">Start a Business</h2>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 </div>
 
                 {/* Column 3 */}
                 <div>
-                  <div className="card bg-base-300 shadow-md h-full rounded-none">
-                    <div className="card-body">
-                      <h2 className="card-title ">Application Process</h2>
+                  <Link to="/application-process">
+                    <div className="card bg-base-100 image-full h-fit rounded-none transition-shadow ease-in-out duration-300 hover:rounded-lg hover:shadow-xl">
+                      <figure>
+                        <img
+                          src="https://images.unsplash.com/photo-1669127300649-940337f1487e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmFpcm9iaXxlbnwwfHwwfHx8MA%3D%3D"
+                          alt="Green Finance"
+                        />
+                      </figure>
+                      <div className="card-body flex w-full justify-center rounded-none">
+                        <h2 className="card-title">Application Process</h2>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 </div>
 
                 {/* Column 4 */}
                 <div>
-                  <div className="card bg-base-300 shadow-md h-full rounded-none">
-                    <div className="card-body">
-                      <h2 className="card-title ">Operating in the NIFC</h2>
+                  <Link to="/operating-in-nifc">
+                    <div className="card bg-base-100 image-full h-fit rounded-none transition-shadow ease-in-out duration-300 hover:rounded-lg hover:shadow-xl">
+                      <figure>
+                        <img
+                          src="https://images.unsplash.com/photo-1669127300649-940337f1487e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmFpcm9iaXxlbnwwfHwwfHx8MA%3D%3D"
+                          alt="Green Finance"
+                        />
+                      </figure>
+                      <div className="card-body flex w-full justify-center rounded-none">
+                        <h2 className="card-title">Operating in the NIFC</h2>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               </div>
             </div>
