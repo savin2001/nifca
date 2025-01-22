@@ -105,7 +105,8 @@ const Navbar = () => {
             </svg>
           </button>
           <Link
-            to="/apply"
+            // to="/apply"
+            to="#"
             className="btn btn-neutral btn-sm uppercase font-light rounded-none"
           >
             Start Application
