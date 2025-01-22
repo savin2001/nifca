@@ -1,4 +1,6 @@
 import React from 'react'
+import BreadCrumbMenu from '../components/BreadCrumbMenu'
+import { Link } from 'react-router-dom'
 
 const Media = () => {
   return (

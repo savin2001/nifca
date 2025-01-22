@@ -15,6 +15,9 @@ import NIFCFirm from "./pages/NIFCFirm";
 import Media from "./pages/Media";
 import Articles from "./pages/Articles";
 import Article from "./pages/Article";
+import TargetSector from "./pages/TargetSector";
+import StartBusiness from "./pages/StartBusiness";
+import OperatingNIFC from "./pages/OperatingNIFC";
 
 function App() {
   return (
@@ -39,10 +42,10 @@ function App() {
           <Route path="/multinationals" element={<GreenFinance />} />
           <Route path="/professional-services" element={<GreenFinance />} />
           <Route path="/other" element={<GreenFinance />} />
-          <Route path="/target-sector" element={<GreenFinance />} />
-          <Route path="/start-business" element={<GreenFinance />} />
-          <Route path="/application-process" element={<GreenFinance />} />
-          <Route path="/operating-in-nifc" element={<GreenFinance />} />
+          <Route path="/target-sector" element={<TargetSector />} />
+          <Route path="/start-business" element={<StartBusiness />} />
+          <Route path="/application-process" element={<ApplicationProcess />} />
+          <Route path="/operating-in-nifc" element={<OperatingNIFC />} />
           <Route path="/enquiry" element={<GreenFinance />} />
           <Route path="/enquiry" element={<GreenFinance />} />
           <Route path="/enquiry" element={<GreenFinance />} />
