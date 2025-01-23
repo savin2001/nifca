@@ -3,6 +3,12 @@ import BreadCrumbMenu from "../components/BreadCrumbMenu";
 import ObjectivesCarousel from "../components/ObjectivesCarousel";
 
 const About = () => {
+  // Define breadcrumb links
+  const breadcrumbLinks = [
+    { to: "/discover-nifc", label: "Discover the NIFC" },
+    { to: "#", label: "What is NIFC" },
+  ];
+
   return (
     <div className="">
       <div className="relative">
@@ -28,8 +34,10 @@ const About = () => {
             </div>
           </div>
         </div>
-        <BreadCrumbMenu />
+        {/* Pass breadcrumb links as a prop */}
+        <BreadCrumbMenu links={breadcrumbLinks} />
       </div>
+
       {/* Section 2 */}
       <div className="h-screen flex flex-col justify-center items-center font-light">
         <div className="w-full flex justify-center items-center h-1/3 bg-base-100 sm:text-lg md:text-2xl ">

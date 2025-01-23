@@ -28,6 +28,15 @@ const Home = () => {
       <Hero />
 
       {/* Section 2: The NIFC Offering */}
+      <div className="h-1/4 flex flex-col items-center bg-base-200">
+        <div className="w-full max-w-screen-lg text-center py-16">
+          <h2 className="text-2xl md:text-4xl font-meium capitalize text-neutral ">
+            Potential CTA's Get Certified, Invest
+          </h2>
+        </div>
+      </div>
+
+      {/* Section 2: The NIFC Offering */}
       <div className="h-screen flex flex-col items-center bg-base-100 mb-14">
         <div className="w-full max-w-screen-lg text-center py-16">
           <h2 className="text-2xl md:text-4xl font-light uppercase text-primary mb-8">
@@ -95,7 +104,7 @@ const Home = () => {
       <div className="bg-base-200 py-16">
         <div className="max-w-screen-lg mx-auto text-left">
           <h2 className="text-2xl md:text-4xl font-light uppercase text-primary pb-12">
-            Featured Articles
+            Featured
           </h2>
           <p className="text-md md:text-lg text-neutral mb-8">
             Explore the latest insights, press releases, and thought leadership

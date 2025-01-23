@@ -2,6 +2,12 @@ import React from "react";
 import BreadCrumbMenu from "../components/BreadCrumbMenu";
 
 const Article = () => {
+  // Define breadcrumb links
+  const breadcrumbLinks = [
+    { to: "/media", label: "News and Media" },
+    { to: "/press-releases", label: "Press Releases" },
+    { to: "/article", label: "NIFCA's Impact on Community Development" },
+  ];
   return (
     <div className="relative">
       {/* Hero Carousel */}
@@ -26,7 +32,7 @@ const Article = () => {
           </div>
         </div>
       </div>
-      <BreadCrumbMenu />
+      <BreadCrumbMenu links={breadcrumbLinks} />
       <div className="max-w-screen-lg mx-auto text-left flex flex-col mt-20">
         <div className="flex w-full justify-center">
           <p className="text-primary font-light text-sm uppercase mb-12">

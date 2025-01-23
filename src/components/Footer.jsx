@@ -1,9 +1,15 @@
-// src/components/Footer.jsx
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaInstagram,
+  FaWhatsapp,
+  FaYoutube,
+} from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import Logo from "../assets/nifca-logo.png";
 import VisionLogo from "../assets/Vision2030_logo.png";
-import SocialMedia from "./SocialMedia";
 
 const Footer = () => {
   return (
@@ -142,10 +148,47 @@ const Footer = () => {
             <p className="text-sm mt-2">
               <strong>Phone:</strong> +254 792 000 555
             </p>
+            {/* Social Media Icons */}
+            <div className="flex space-x-4 mt-4">
+              <Link
+                to="#"
+                className="text-neutral hover:text-primary transition text-2xl"
+              >
+                <FaFacebookF />
+              </Link>
+              <Link
+                to="#"
+                className="text-neutral hover:text-primary transition text-2xl"
+              >
+                <FaXTwitter />
+              </Link>
+              <Link
+                to="#"
+                className="text-neutral hover:text-primary transition text-2xl"
+              >
+                <FaLinkedinIn />
+              </Link>
+              <Link
+                to="#"
+                className="text-neutral hover:text-primary transition text-2xl"
+              >
+                <FaInstagram />
+              </Link>
+              <Link
+                to="#"
+                className="text-neutral hover:text-primary transition text-2xl"
+              >
+                <FaWhatsapp />
+              </Link>
+              <Link
+                to="#"
+                className="text-neutral hover:text-primary transition text-2xl"
+              >
+                <FaYoutube />
+              </Link>
+            </div>
           </div>
         </div>
-
-        <SocialMedia />
 
         {/* Footer Bottom */}
         <div className="mt-8 text-center text-sm border-t border-gray-600 pt-4">

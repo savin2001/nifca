@@ -1,6 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaInstagram,
+  FaWhatsapp,
+  FaYoutube,
+  
+} from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const FloatingSocialButton = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +43,7 @@ const FloatingSocialButton = () => {
             to="#"
             className="text-neutral hover:text-primary transition text-2xl"
           >
-            <FaTwitter />
+            <FaXTwitter />
           </Link>
           <Link
             to="#"
@@ -54,6 +62,12 @@ const FloatingSocialButton = () => {
             className="text-neutral hover:text-primary transition text-2xl"
           >
             <FaWhatsapp />
+          </Link>
+          <Link
+            to="#"
+            className="text-neutral hover:text-primary transition text-2xl"
+          >
+            <FaYoutube />
           </Link>
         </div>
       )}

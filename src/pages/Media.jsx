@@ -3,6 +3,11 @@ import BreadCrumbMenu from '../components/BreadCrumbMenu'
 import { Link } from 'react-router-dom'
 
 const Media = () => {
+  // Define breadcrumb links
+  const breadcrumbLinks = [
+    { to: "/media", label: "News and Media" }
+  ];
+
   return (
     <div className="">
       <div className="relative ">
@@ -28,7 +33,7 @@ const Media = () => {
             </div>
           </div>
         </div>
-        <BreadCrumbMenu />
+        <BreadCrumbMenu links={breadcrumbLinks} />
       </div>
 
       {/* Articles Section */}

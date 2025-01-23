@@ -9,8 +9,8 @@ const Navbar = () => {
       <div className="w-11/12 mx-auto">
         {/* Navbar Start */}
         <div className="navbar-start">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost">
+          <div className="dropdown lg:hidden">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -29,7 +29,7 @@ const Navbar = () => {
               className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
             >
               <li>
-                <Link to="/about">Discover NIFC</Link>
+                <Link to="/about">What is NIFC</Link>
               </li>
               <li>
                 <Link to="/frameworks">Framework</Link>
@@ -78,7 +78,7 @@ const Navbar = () => {
                 className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
               >
                 <li>
-                  <Link to="/discover-nifc">Discover NIFC</Link>
+                  <Link to="/discover-nifc">What is NIFC</Link>
                 </li>
                 <li>
                   <Link to="/frameworks">Framework</Link>
@@ -102,13 +102,13 @@ const Navbar = () => {
             </li>
 
             {/* Regular Menu Items */}
-            <li>
+            <li className="btn btn-ghost">
               <Link to="/why-nairobi">Why Choose Nairobi</Link>
             </li>
-            <li>
+            <li className="btn btn-ghost">
               <Link to="/becoming-nifc-firm">Join the NIFC</Link>
             </li>
-            <li>
+            <li className="btn btn-ghost">
               <Link to="/media">News & Media</Link>
             </li>
           </ul>

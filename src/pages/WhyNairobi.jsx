@@ -2,6 +2,10 @@ import React from "react";
 import BreadCrumbMenu from "../components/BreadCrumbMenu";
 
 const WhyNairobi = () => {
+  // Define breadcrumb links
+  const breadcrumbLinks = [
+    { to: "/why-nairobi", label: "Why Choose Nairobi" }
+  ];
   return (
     <div className="relative">
       {/* Hero Carousel */}
@@ -26,7 +30,8 @@ const WhyNairobi = () => {
           </div>
         </div>
       </div>
-      <BreadCrumbMenu />
+      {/* Pass breadcrumb links as a prop */}
+      <BreadCrumbMenu links={breadcrumbLinks} />
       <div className="max-w-screen-lg mx-auto text-left flex flex-col mt-20">
         <p className="text-neutral text-lg font-light">
           Nairobi, often referred to as the "Green City in the Sun," is more
