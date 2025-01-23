@@ -5,7 +5,6 @@ import Logo from "../assets/nifca-logo.png";
 import VisionLogo from "../assets/Vision2030_logo.png";
 import SocialMedia from "./SocialMedia";
 
-
 const Footer = () => {
   return (
     <footer className="bg-base-100 text-neutral py-10">
@@ -22,43 +21,65 @@ const Footer = () => {
             <img src={VisionLogo} alt="Vision Logo" className="w-48" />
           </div>
 
-          {/* Column 2: About the NIFC */}
+          {/* Column 2: Discover NIFC */}
           <div>
-            <h3 className="font-light uppercase text-lg mb-4">
-              About the NIFC
-            </h3>
+            <h3 className="font-light uppercase text-lg mb-4">Discover NIFC</h3>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/discover-nifc"
                   className="text-neutral hover:text-primary transition"
                 >
-                  The NIFC
-                </a>
+                  Discover NIFC
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/frameworks"
                   className="text-neutral hover:text-primary transition"
                 >
-                  Leadership
-                </a>
+                  Framework
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/initiatives"
                   className="text-neutral hover:text-primary transition"
                 >
-                  Laws
-                </a>
+                  Our Team
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/partners"
                   className="text-neutral hover:text-primary transition"
                 >
-                  Public Register
-                </a>
+                  Key Partners
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/laws"
+                  className="text-neutral hover:text-primary transition"
+                >
+                  Laws & Regulation
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/company-ledger"
+                  className="text-neutral hover:text-primary transition"
+                >
+                  Company Ledger
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/careers"
+                  className="text-neutral hover:text-primary transition"
+                >
+                  Careers
+                </Link>
               </li>
             </ul>
           </div>
@@ -68,80 +89,47 @@ const Footer = () => {
             <h3 className="font-light uppercase text-lg mb-4">Why Nairobi</h3>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/why-nairobi"
                   className="text-neutral hover:text-primary transition"
                 >
-                  Target Sectors
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-neutral hover:text-primary transition"
-                >
-                  Starting a Business
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-neutral hover:text-primary transition"
-                >
-                  Application Process
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-neutral hover:text-primary transition"
-                >
-                  Operating in the NIFC
-                </a>
+                  Why Choose Nairobi
+                </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 4: Media */}
+          {/* Column 4: Join the NIFC */}
+          <div>
+            <h3 className="font-light uppercase text-lg mb-4">Join the NIFC</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  to="/becoming-nifc-firm"
+                  className="text-neutral hover:text-primary transition"
+                >
+                  Join the NIFC
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 5: Media */}
           <div>
             <h3 className="font-light uppercase text-lg mb-4">Media</h3>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/media"
                   className="text-neutral hover:text-primary transition"
                 >
-                  Press Releases
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-neutral hover:text-primary transition"
-                >
-                  Media Kit
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-neutral hover:text-primary transition"
-                >
-                  Events
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-neutral hover:text-primary transition"
-                >
-                  Resources
-                </a>
+                  News & Media
+                </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 5: Contact Information */}
+          {/* Column 6: Contact Information */}
           <div>
             <h3 className="font-light uppercase text-lg mb-4">Contact Us</h3>
             <p className="text-sm">
@@ -157,7 +145,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <SocialMedia/>
+        <SocialMedia />
 
         {/* Footer Bottom */}
         <div className="mt-8 text-center text-sm border-t border-gray-600 pt-4">
