@@ -3,7 +3,7 @@ import BreadCrumbMenu from "../components/BreadCrumbMenu";
 
 const Innovation = () => {
     const breadcrumbLinks = [
-        { to: "/innovations", label: "Innovation" },
+        { to: "/innovations", label: "Innovation, Growth and Strategic Initiative" },
     ];
 
     const sections = [
