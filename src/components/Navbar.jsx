@@ -135,7 +135,7 @@ const Navbar = () => {
           </button>
           <Link
             to="#"
-            className="btn btn-neutral btn-sm uppercase font-light rounded-none"
+            className="btn btn-primary btn-sm uppercase font-light rounded-none"
           >
             Contact Us
           </Link>

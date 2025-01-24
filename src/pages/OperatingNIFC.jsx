@@ -2,6 +2,11 @@ import React from "react";
 import BreadCrumbMenu from "../components/BreadCrumbMenu";
 
 const OperatingNIFC = () => {
+  
+  // Define breadcrumb links
+  const breadcrumbLinks = [
+    { to: "/operating-in-nifc", label: "Join The NIFC" }
+  ];
   return (
     <div className="relative">
       {/* Hero Carousel */}
@@ -26,7 +31,8 @@ const OperatingNIFC = () => {
           </div>
         </div>
       </div>
-      <BreadCrumbMenu />
+      {/* Pass breadcrumb links as a prop */}
+      <BreadCrumbMenu links={breadcrumbLinks} />
       <div className="max-w-screen-lg mx-auto text-left flex flex-col mt-20">
         <p className="text-neutral text-lg font-light">
           The Nairobi International Financial Centre (NIFC) is a strategic

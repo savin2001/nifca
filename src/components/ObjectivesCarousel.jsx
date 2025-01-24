@@ -22,7 +22,7 @@ export default function ObjectivesCarousel() {
   };
 
   return (
-    <div className="w-full flex flex-col justify-center items-center h-3/5 bg-base-200 sm:text-lg md:text-3xl relative py-12">
+    <div className="w-full flex flex-col justify-center items-center h-3/5 bg-base-100 sm:text-lg md:text-3xl relative py-12">
       <h2 className="text-center uppercase md:w-2/3 mb-12">Objectives</h2>
 
       {/* Carousel container */}
@@ -30,30 +30,59 @@ export default function ObjectivesCarousel() {
         ref={carouselRef}
         className="carousel carousel-end rounded-box flex overflow-x-auto scrollbar-hide space-x-4 w-full max-w-6xl"
       >
-        {Array.from({ length: 10 }).map((_, index) => (
+        {[
+          {
+            title: "Attract Global Investments",
+            description:
+              "Create a conducive environment for international investors to thrive in Kenya and Africa.",
+            image:
+              "https://images.unsplash.com/photo-1669127300649-940337f1487e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmFpcm9iaXxlbnwwfHwwfHx8MA%3D%3D",
+          },
+          {
+            title: "Foster Financial Innovation",
+            description:
+              "Support the development and adoption of innovative financial services and products.",
+            image:
+              "https://images.unsplash.com/photo-1669127300649-940337f1487e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmFpcm9iaXxlbnwwfHwwfHx8MA%3D%3D",
+          },
+          {
+            title: "Enable Regional Growth",
+            description:
+              "Act as a catalyst for economic and financial sector growth across Africa.",
+            image:
+              "https://images.unsplash.com/photo-1669127300649-940337f1487e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmFpcm9iaXxlbnwwfHwwfHx8MA%3D%3D",
+          },
+          {
+            title: "Promote Transparency",
+            description:
+              "Ensure a well-regulated and transparent ecosystem for businesses and investors.",
+            image:
+              "https://images.unsplash.com/photo-1669127300649-940337f1487e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmFpcm9iaXxlbnwwfHwwfHx8MA%3D%3D",
+          },
+          {
+            title: "Enhance Regional Access",
+            description:
+              "Position Nairobi as a gateway to financial opportunities across Africa.",
+            image:
+              "https://images.unsplash.com/photo-1669127300649-940337f1487e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmFpcm9iaXxlbnwwfHwwfHx8MA%3D%3D",
+          },
+        ].map(({ title, description, image }, index) => (
           <div
             key={index}
             className="carousel-item flex-shrink-0 w-[calc(100%/5)] max-w-[20%]"
           >
-            <div
-              className={`card w-full h-fit bg-base-100 shadow-md flex flex-col justify-end p-4 group`}
-            >
+            <div className="card w-full h-fit bg-base-100 shadow-md flex flex-col justify-end p-4 group">
               {/* Image */}
               <img
-                src="https://images.unsplash.com/photo-1669127300649-940337f1487e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmFpcm9iaXxlbnwwfHwwfHx8MA%3D%3D"
+                src={image}
                 alt={`Objective ${index + 1}`}
-                className="w-full h-32 object-cover rounded-md mb-4 transition-opacity duration-300 group-hover:opacity-50" // Hides image on hover
+                className="w-full h-32 object-cover rounded-md mb-4 transition-opacity duration-300 group-hover:opacity-50"
               />
 
               {/* Text Content */}
-              <h3 className="text-sm md:text-lg font-bold">
-                Objective Title {index + 1}
-              </h3>
-              <p
-                className="text-sm text-gray-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100" // Shows paragraph on hover
-              >
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris...
+              <h3 className="text-sm md:text-lg font-bold">{title}</h3>
+              <p className="text-sm text-gray-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                {description}
               </p>
             </div>
           </div>
