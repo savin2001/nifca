@@ -1,5 +1,6 @@
 import React from "react";
 import BreadCrumbMenu from "../components/BreadCrumbMenu";
+import { Link } from "react-router-dom";
 
 const Frameworks = () => {
   // Define breadcrumb links
@@ -107,9 +108,9 @@ const Frameworks = () => {
           <button className="capitalize flex-grow btn btn-ghost btn-lg text-3xl font-light">
             Start application ❯
           </button>
-          <button className="capitalize flex-grow btn btn-ghost  btn-lg text-3xl font-light">
+          <Link to="/contact" className="capitalize flex-grow btn btn-ghost  btn-lg text-3xl font-light">
             Make an enquiry ❯
-          </button>
+          </Link>
         </div>
       </div>
     </div>

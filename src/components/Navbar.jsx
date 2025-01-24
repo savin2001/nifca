@@ -134,7 +134,7 @@ const Navbar = () => {
             </svg>
           </button>
           <Link
-            to="#"
+            to="/contact"
             className="btn btn-primary btn-sm uppercase font-light rounded-none"
           >
             Contact Us
