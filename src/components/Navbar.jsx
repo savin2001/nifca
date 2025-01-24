@@ -68,7 +68,7 @@ const Navbar = () => {
         {/* Navbar Center */}
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            {/* Dropdown Menu */}
+            {/* Discover NIFC Dropdown */}
             <li className="dropdown dropdown-hover">
               <div tabIndex={0} role="button" className="btn btn-ghost">
                 Discover NIFC
@@ -101,19 +101,55 @@ const Navbar = () => {
               </ul>
             </li>
 
+            {/* Why Choose Nairobi Dropdown */}
+            <li className="dropdown dropdown-hover">
+              <div tabIndex={0} role="button" className="btn btn-ghost">
+                Why Choose Nairobi
+              </div>
+              <ul
+                tabIndex={0}
+                className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+              >
+                <li>
+                  <Link to="/why-nairobi">
+                    Why Nairobi
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/global-financial-gateway">
+                    Global Financial Gateway
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/strength-in-financial-services">
+                    Strength in Financial Services
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/sustainability">Sustainability</Link>
+                </li>
+                <li>
+                  <Link to="/tourism">Tourism</Link>
+                </li>
+                <li>
+                  <Link to="/lifestyle-nightlife">Lifestyle & Nightlife</Link>
+                </li>
+              </ul>
+            </li>
+
             {/* Regular Menu Items */}
             <li className="btn btn-ghost">
-              <Link to="/why-nairobi">Why Choose Nairobi</Link>
-            </li>
-            <li className="btn btn-ghost">
               <Link to="/becoming-nifc-firm">Join the NIFC</Link>
+            </li>
+            {/* Regular Menu Items */}
+            <li className="btn btn-ghost">
+              <Link to="/innovations">Innovation</Link>
             </li>
             <li className="btn btn-ghost">
               <Link to="/media">News & Media</Link>
             </li>
           </ul>
         </div>
-
 
         {/* Navbar End */}
         <div className="navbar-end">

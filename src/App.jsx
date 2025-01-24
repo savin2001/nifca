@@ -22,6 +22,12 @@ import Frameworks from "./pages/Frameworks";
 import Team from "./pages/Team";
 import Partners from "./pages/Partners";
 import Contact from "./pages/Contact";
+import FinancialGateway from "./pages/FinancialGateway";
+import FinancialServices from "./pages/FinancialServices";
+import Sustainability from "./pages/Sustainability";
+import Tourism from "./pages/Tourism";
+import Lifestyle from "./pages/Lifestyle";
+import Innovation from "./pages/Innovation";
 
 function App() {
   return (
@@ -54,6 +60,16 @@ function App() {
           <Route path="/our-team" element={<Team />} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/global-financial-gateway" element={<FinancialGateway />} />
+          <Route path="/strength-in-financial-services" element={<FinancialServices />} />
+          <Route path="/sustainability" element={<Sustainability />} />
+          <Route path="/tourism" element={<Tourism />} />
+          <Route path="/lifestyle-nightlife" element={<Lifestyle />} />
+          <Route path="/innovations" element={<Innovation />} />
+          <Route path="/company-ledger" element={<GreenFinance />} />
+          <Route path="/careers" element={<GreenFinance />} />
+          <Route path="/enquiry" element={<GreenFinance />} />
+          <Route path="/enquiry" element={<GreenFinance />} />
           <Route path="/enquiry" element={<GreenFinance />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
