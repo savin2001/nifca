@@ -28,6 +28,16 @@ import Sustainability from "./pages/Sustainability";
 import Tourism from "./pages/Tourism";
 import Lifestyle from "./pages/Lifestyle";
 import Innovation from "./pages/Innovation";
+import StartYourApplication from "./pages/StartApplication";
+import NIFCOneStopShop from "./pages/OneStopShop";
+import ImmigrationSupport from "./pages/ImmigrationSupport";
+import BusinessSupport from "./pages/BusinessSupport";
+import SDGPipelineBuilder  from "./pages/SDGPipelineBuilder";
+import NIFCTechAccelerator from "./pages/NIFCTechAccelerator";
+// import StartYourApplication from "./pages/StartApplication";
+// import StartYourApplication from "./pages/StartApplication";
+// import StartYourApplication from "./pages/StartApplication";
+// import StartYourApplication from "./pages/StartApplication";
 
 function App() {
   return (
@@ -68,12 +78,12 @@ function App() {
           <Route path="/innovations" element={<Innovation />} />
           <Route path="/company-ledger" element={<GreenFinance />} />
           <Route path="/careers" element={<GreenFinance />} />
-          <Route path="/enquiry" element={<GreenFinance />} />
-          <Route path="/enquiry" element={<GreenFinance />} />
-          <Route path="/enquiry" element={<GreenFinance />} />
-          <Route path="/enquiry" element={<GreenFinance />} />
-          <Route path="/enquiry" element={<GreenFinance />} />
-          <Route path="/enquiry" element={<GreenFinance />} />
+          <Route path="/start-application" element={<StartYourApplication />} />
+          <Route path="/one-stop-shop" element={<NIFCOneStopShop />} />
+          <Route path="/immigration-support" element={<ImmigrationSupport />} />
+          <Route path="/business-support" element={<BusinessSupport />} />
+          <Route path="/sdg-pipeline-builder" element={<SDGPipelineBuilder  />} />
+          <Route path="/tech-accelerator" element={<NIFCTechAccelerator />} />
           <Route path="/enquiry" element={<GreenFinance />} />
           <Route path="/enquiry" element={<GreenFinance />} />
           <Route path="/enquiry" element={<GreenFinance />} />

@@ -147,7 +147,7 @@ const Navbar = () => {
                 className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
               >
                 <li>
-                  <Link to="/becoming-nifc-firm">Becoming NIFC Firm</Link>
+                  <Link to="/becoming-nifc-firm">Becoming an NIFC Firm</Link>
                 </li>
                 <li>
                   <Link to="/start-application">Start Your Application</Link>

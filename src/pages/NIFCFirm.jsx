@@ -103,7 +103,7 @@ const NIFCFirm = () => {
                         <div className="hero-overlay bg-opacity-60"></div>
                         <div className="hero-content text-neutral-content text-center">
                             <h1 className="mb-5 text-5xl font-light uppercase">
-                                Becoming an NIFC Firm
+                                Join the NIFC
                             </h1>
                         </div>
                     </div>
