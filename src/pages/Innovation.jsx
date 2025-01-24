@@ -1,5 +1,6 @@
 import React from "react";
 import BreadCrumbMenu from "../components/BreadCrumbMenu";
+import { Link } from "react-router-dom";
 
 const Innovation = () => {
     const breadcrumbLinks = [
@@ -100,7 +101,8 @@ const Innovation = () => {
                             <h2 className="text-3xl font-semibold mb-4">{section.title}</h2>
                             <p className="text-neutral mb-4">{section.description.split("\n")[0]}</p>
                             <p className="text-neutral mb-6">{section.description.split("\n")[1]}</p>
-                            <a href={section.exploreLink} className="btn btn-primary w-40">
+                            <Link to="#" className="btn btn-primary w-40">
+                            {/* to={section.exploreLink} */}
                                 Explore More
                             </a>
                         </div>
