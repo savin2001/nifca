@@ -16,12 +16,14 @@ const Navbar = () => {
                 className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor">
+                stroke="currentColor"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h7" />
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
               </svg>
             </div>
             <ul
@@ -111,9 +113,7 @@ const Navbar = () => {
                 className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
               >
                 <li>
-                  <Link to="/why-nairobi">
-                    Why Nairobi
-                  </Link>
+                  <Link to="/why-nairobi">Why Nairobi</Link>
                 </li>
                 <li>
                   <Link to="/global-financial-gateway">
@@ -137,11 +137,40 @@ const Navbar = () => {
               </ul>
             </li>
 
-            {/* Regular Menu Items */}
-            <li className="btn btn-ghost">
-              <Link to="/becoming-nifc-firm">Join the NIFC</Link>
+            {/* Join the NIFC Dropdown */}
+            <li className="dropdown dropdown-hover">
+              <div tabIndex={0} role="button" className="btn btn-ghost">
+                Join the NIFC
+              </div>
+              <ul
+                tabIndex={0}
+                className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+              >
+                <li>
+                  <Link to="/becoming-nifc-firm">Becoming NIFC Firm</Link>
+                </li>
+                <li>
+                  <Link to="/start-application">Start Your Application</Link>
+                </li>
+                <li>
+                  <Link to="/one-stop-shop">NIFC One Stop Shop</Link>
+                </li>
+                <li>
+                  <Link to="/immigration-support">Immigration Support</Link>
+                </li>
+                <li>
+                  <Link to="/business-support">Business Support</Link>
+                </li>
+                <li>
+                  <Link to="/sdg-pipeline-builder">SDG Pipeline Builder</Link>
+                </li>
+                <li>
+                  <Link to="/tech-accelerator">NIFC Tech Accelerator</Link>
+                </li>
+              </ul>
             </li>
-            {/* Regular Menu Items */}
+
+            {/* Additional Menu Items */}
             <li className="btn btn-ghost">
               <Link to="/innovations">Innovation</Link>
             </li>

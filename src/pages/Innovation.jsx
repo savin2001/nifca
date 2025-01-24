@@ -104,7 +104,7 @@ const Innovation = () => {
                             <Link to="#" className="btn btn-primary w-40">
                             {/* to={section.exploreLink} */}
                                 Explore More
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 ))}

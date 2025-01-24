@@ -71,6 +71,12 @@ function App() {
           <Route path="/enquiry" element={<GreenFinance />} />
           <Route path="/enquiry" element={<GreenFinance />} />
           <Route path="/enquiry" element={<GreenFinance />} />
+          <Route path="/enquiry" element={<GreenFinance />} />
+          <Route path="/enquiry" element={<GreenFinance />} />
+          <Route path="/enquiry" element={<GreenFinance />} />
+          <Route path="/enquiry" element={<GreenFinance />} />
+          <Route path="/enquiry" element={<GreenFinance />} />
+          <Route path="/enquiry" element={<GreenFinance />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </MainLayout>
