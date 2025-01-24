@@ -2,6 +2,7 @@ import React from "react";
 import BreadCrumbMenu from "../components/BreadCrumbMenu";
 
 const TargetSector = () => {
+  const breadcrumbLinks = [{ to: "/target-sector", label: "Target Sector" }];
   return (
     <div className="relative">
       {/* Hero Carousel */}
@@ -26,7 +27,7 @@ const TargetSector = () => {
           </div>
         </div>
       </div>
-      <BreadCrumbMenu />
+      <BreadCrumbMenu links={breadcrumbLinks} />
       <div className="max-w-screen-lg mx-auto text-left flex flex-col mt-20">
         <p className="text-neutral text-lg font-light">
           Kenya is rapidly emerging as a key player in various sectors, with a

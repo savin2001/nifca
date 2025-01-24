@@ -51,7 +51,7 @@ const Team = () => {
           <div className="w-full p-6 bg-base-100">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               {/* Example Member 1 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:shadow-lg transition duration-300">
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
                   src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
                   alt="Board Member 1"
@@ -62,7 +62,7 @@ const Team = () => {
               </div>
 
               {/* Example Member 2 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:shadow-lg transition duration-300">
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
                   src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
                   alt="Board Member 2"
@@ -73,7 +73,7 @@ const Team = () => {
               </div>
 
               {/* Example Member 3 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:shadow-lg transition duration-300">
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
                   src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
                   alt="Board Member 3"
@@ -84,7 +84,7 @@ const Team = () => {
               </div>
 
               {/* Example Member 4 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:shadow-lg transition duration-300">
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
                   src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
                   alt="Board Member 4"
@@ -95,7 +95,7 @@ const Team = () => {
               </div>
 
               {/* Example Member 5 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:shadow-lg transition duration-300">
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
                   src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
                   alt="Board Member 5"
@@ -106,7 +106,7 @@ const Team = () => {
               </div>
 
               {/* Example Member 6 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:shadow-lg transition duration-300">
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
                   src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
                   alt="Board Member 6"
@@ -117,7 +117,7 @@ const Team = () => {
               </div>
 
               {/* Example Member 6 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:shadow-lg transition duration-300">
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
                   src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
                   alt="Board Member 6"
@@ -128,7 +128,7 @@ const Team = () => {
               </div>
 
               {/* Example Member 6 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:shadow-lg transition duration-300">
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
                   src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
                   alt="Board Member 6"
@@ -149,7 +149,7 @@ const Team = () => {
           <div className="w-full p-6 bg-base-100">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Member 1 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:shadow-lg transition duration-300 flex flex-row w-full justify-between items-center">
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300 flex flex-row w-full justify-between items-center">
                 <img
                   src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
                   alt="Management Member 1"
@@ -162,7 +162,7 @@ const Team = () => {
               </div>
 
               {/* Member 2 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:shadow-lg transition duration-300 flex flex-row w-full justify-between items-center">
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300 flex flex-row w-full justify-between items-center">
                 <img
                   src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
                   alt="Management Member 2"
@@ -175,7 +175,7 @@ const Team = () => {
               </div>
 
               {/* Member 3 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:shadow-lg transition duration-300 flex flex-row w-full justify-between items-center">
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300 flex flex-row w-full justify-between items-center">
                 <img
                   src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
                   alt="Management Member 3"
@@ -190,7 +190,7 @@ const Team = () => {
               </div>
 
               {/* Member 4 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:shadow-lg transition duration-300 flex flex-row w-full justify-between items-center">
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300 flex flex-row w-full justify-between items-center">
                 <img
                   src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
                   alt="Management Member 4"
@@ -213,37 +213,37 @@ const Team = () => {
           <div className="w-full p-6 bg-base-100">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Member 1 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:shadow-lg transition duration-300">
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <h3 className="text-lg font-semibold mb-2">Jane Mwangi</h3>
                 <p className="text-gray-600">Chairperson, Steering Committee</p>
               </div>
 
               {/* Member 2 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:shadow-lg transition duration-300">
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <h3 className="text-lg font-semibold mb-2">Michael Ochieng</h3>
                 <p className="text-gray-600">Policy Advisor</p>
               </div>
 
               {/* Member 3 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:shadow-lg transition duration-300">
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <h3 className="text-lg font-semibold mb-2">Grace Wanjiru</h3>
                 <p className="text-gray-600">Head of Legal Affairs</p>
               </div>
 
               {/* Member 4 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:shadow-lg transition duration-300">
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <h3 className="text-lg font-semibold mb-2">Peter Njoroge</h3>
                 <p className="text-gray-600">Director of Communications</p>
               </div>
 
               {/* Member 5 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:shadow-lg transition duration-300">
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <h3 className="text-lg font-semibold mb-2">Susan Otieno</h3>
                 <p className="text-gray-600">Financial Strategist</p>
               </div>
 
               {/* Member 6 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:shadow-lg transition duration-300">
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <h3 className="text-lg font-semibold mb-2">Kevin Mutua</h3>
                 <p className="text-gray-600">Project Manager</p>
               </div>

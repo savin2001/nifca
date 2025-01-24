@@ -20,6 +20,7 @@ import StartBusiness from "./pages/StartBusiness";
 import OperatingNIFC from "./pages/OperatingNIFC";
 import Frameworks from "./pages/Frameworks";
 import Team from "./pages/Team";
+import Partners from "./pages/Partners";
 
 function App() {
   return (
@@ -50,7 +51,7 @@ function App() {
           <Route path="/operating-in-nifc" element={<OperatingNIFC />} />
           <Route path="/frameworks" element={<Frameworks />} />
           <Route path="/our-team" element={<Team />} />
-          <Route path="/enquiry" element={<GreenFinance />} />
+          <Route path="/partners" element={<Partners />} />
           <Route path="/enquiry" element={<GreenFinance />} />
           <Route path="/enquiry" element={<GreenFinance />} />
           <Route path="*" element={<NotFound />} />

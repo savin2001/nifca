@@ -2,6 +2,10 @@ import React from "react";
 import BreadCrumbMenu from "../components/BreadCrumbMenu";
 
 const GreenFinance = () => {
+  const breadcrumbLinks = [
+    { to: "/target-sector", label: "Target Sector" },
+    { to: "#", label: "Green Finance" },
+  ];
   return (
     <div className="relative">
       {/* Hero Carousel */}
@@ -26,7 +30,8 @@ const GreenFinance = () => {
           </div>
         </div>
       </div>
-      <BreadCrumbMenu />
+      {/* Pass breadcrumb links as a prop */}
+      <BreadCrumbMenu links={breadcrumbLinks} />
       <div className="max-w-screen-lg mx-auto text-left flex flex-col mt-20">
         <p className="text-neutral text-lg font-light">
           Green finance represents the integration of environmental and social
