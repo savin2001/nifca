@@ -45,14 +45,16 @@ const Team = () => {
 
   const boardMembers = [
     {
-      name: "John Doe",
+      name: "Michael Kamiru Kamau",
       role: "Chairperson, NIFC",
-      bio: "John has over 20 years of experience in the corporate sector...",
+      bio: "Michael Kamiru Kamau has over 20 years of experience in the corporate sector...",
+      image: "michael_kamiru"
     },
     {
-      name: "Jane Smith",
+      name: "Darshan Shah",
       role: "Director",
-      bio: "Jane has been a director for 10 years and specializes in finance...",
+      bio: "Darshan Shah has been a director for 10 years and specializes in finance...",
+      image: "darshan_shah"
     },
   ];
 

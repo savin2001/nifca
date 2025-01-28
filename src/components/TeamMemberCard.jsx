@@ -1,9 +1,18 @@
 import React, { useState } from "react";
-
+import teamMember1 from "../assets/michael_kamiru.jpg";
+import teamMember2 from "../assets/darshan_shah.jpg";
+import defaultAvatar from "https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"; 
 const TeamMemberCard = ({ name, role, image, bio, category, index }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
+
+  // Use the imported images based on some condition or prop
+  const getImage = () => {
+    if (image === "michael_kamiru") return teamMember1;
+    if (image === "darshan_shah") return teamMember2;
+    return defaultAvatar; // Fallback to default avatar
+  };
 
   return (
     <>
@@ -12,10 +21,7 @@ const TeamMemberCard = ({ name, role, image, bio, category, index }) => {
         onClick={openModal}
       >
         <img
-          src={
-            image ||
-            "https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
-          }
+          src={getImage()}
           alt={name}
           className="w-full h-fit object-cover rounded-md mb-4"
         />
@@ -37,10 +43,7 @@ const TeamMemberCard = ({ name, role, image, bio, category, index }) => {
             </form>
             <div className="flex">
               <img
-                src={
-                  image ||
-                  "https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
-                }
+                src={getImage()}
                 alt={name}
                 className="w-1/3 h-auto object-cover rounded-md"
               />
