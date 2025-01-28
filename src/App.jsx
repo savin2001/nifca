@@ -34,6 +34,7 @@ import ImmigrationSupport from "./pages/ImmigrationSupport";
 import BusinessSupport from "./pages/BusinessSupport";
 import SDGPipelineBuilder  from "./pages/SDGPipelineBuilder";
 import NIFCTechAccelerator from "./pages/NIFCTechAccelerator";
+import ComingSoon from "./pages/ComingSoon";
 // import StartYourApplication from "./pages/StartApplication";
 // import StartYourApplication from "./pages/StartApplication";
 // import StartYourApplication from "./pages/StartApplication";
@@ -58,10 +59,11 @@ function App() {
           <Route path="/press-releases" element={<Articles />} />
           <Route path="/article" element={<Article />} />
           <Route path="/green-finance" element={<GreenFinance />} />
-          <Route path="/investment-funds" element={<GreenFinance />} />
-          <Route path="/multinationals" element={<GreenFinance />} />
-          <Route path="/professional-services" element={<GreenFinance />} />
-          <Route path="/other" element={<GreenFinance />} />
+          <Route path="/investment-funds" element={<ComingSoon />} />
+          <Route path="/fintech" element={<ComingSoon />} />
+          <Route path="/multinationals" element={<ComingSoon />} />
+          <Route path="/professional-services" element={<ComingSoon />} />
+          <Route path="/other" element={<ComingSoon />} />
           <Route path="/target-sector" element={<TargetSector />} />
           <Route path="/start-business" element={<StartBusiness />} />
           <Route path="/application-process" element={<ApplicationProcess />} />
@@ -76,17 +78,17 @@ function App() {
           <Route path="/tourism" element={<Tourism />} />
           <Route path="/lifestyle-nightlife" element={<Lifestyle />} />
           <Route path="/innovations" element={<Innovation />} />
-          <Route path="/company-ledger" element={<GreenFinance />} />
-          <Route path="/careers" element={<GreenFinance />} />
+          <Route path="/company-ledger" element={<ComingSoon />} />
+          <Route path="/careers" element={<ComingSoon />} />
           <Route path="/start-application" element={<StartYourApplication />} />
           <Route path="/one-stop-shop" element={<NIFCOneStopShop />} />
           <Route path="/immigration-support" element={<ImmigrationSupport />} />
           <Route path="/business-support" element={<BusinessSupport />} />
           <Route path="/sdg-pipeline-builder" element={<SDGPipelineBuilder  />} />
           <Route path="/tech-accelerator" element={<NIFCTechAccelerator />} />
-          <Route path="/enquiry" element={<GreenFinance />} />
-          <Route path="/enquiry" element={<GreenFinance />} />
-          <Route path="/enquiry" element={<GreenFinance />} />
+          <Route path="/coming-soon" element={<ComingSoon />} />
+          <Route path="/enquiry" element={<ComingSoon />} />
+          <Route path="/enquiry" element={<ComingSoon />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </MainLayout>

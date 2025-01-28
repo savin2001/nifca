@@ -1,33 +1,14 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Link } from "react-router-dom"; // Import Link
 import Hero from "../components/Hero";
+import HomePageCarousel from "../components/HomePageCarousel";
 
 const Home = () => {
-  const carouselRef = useRef(null);
-
-  const scrollLeft = () => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollBy({
-        left: -carouselRef.current.offsetWidth,
-        behavior: "smooth",
-      });
-    }
-  };
-
-  const scrollRight = () => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollBy({
-        left: carouselRef.current.offsetWidth,
-        behavior: "smooth",
-      });
-    }
-  };
-
   return (
     <>
       <Hero />
 
-      {/* Section 2: The NIFC Offering */}
+      {/* Section 2: The Tagline */}
       <div className="h-1/4 flex flex-col items-center bg-base-200">
         <div className="w-full max-w-screen-lg text-center py-16">
           <h2 className="text-2xl md:text-4xl font-meium capitalize text-neutral ">
@@ -36,15 +17,16 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Section 2: The NIFC Offering */}
-      <div className="h-screen flex flex-col items-center bg-base-100 mb-14">
+      {/* Section 3: The NIFC Offering */}
+      <div className="h-fit flex flex-col items-center bg-base-100 mb-14">
         <div className="w-full max-w-screen-lg text-center py-16">
           <h2 className="text-2xl md:text-4xl font-light uppercase text-primary mb-8">
             The NIFC Offering
           </h2>
           <p className="text-md md:text-lg text-neutral mb-12 leading-relaxed">
-            Unlock opportunities with unparalleled support, a trusted regulatory
-            environment, and seamless access to a global network.
+            “Unlock opportunities through Kenya's new business environment,
+            crafted to help companies thrive and establish their home in
+            Nairobi.”
           </p>
 
           {/* Offering Cards */}
@@ -54,10 +36,12 @@ const Home = () => {
               <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl text-white font-bold">1</span>
               </div>
-              <h3 className="text-lg font-semibold mb-4">Talent Pool</h3>
+              <h3 className="text-lg font-semibold mb-4">
+                An Efficient Registration Process
+              </h3>
               <p className="text-neutral">
-                Access to a highly skilled and diverse workforce equipped to
-                meet business needs.
+                The NIFC collaborates with key government partners to implement
+                a quick and centralised business registration process
               </p>
             </div>
 
@@ -66,10 +50,12 @@ const Home = () => {
               <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl text-white font-bold">2</span>
               </div>
-              <h3 className="text-lg font-semibold mb-4">Innovation Hub</h3>
+              <h3 className="text-lg font-semibold mb-4">
+                Enabling Business Environment
+              </h3>
               <p className="text-neutral">
-                A thriving ecosystem fostering innovation and collaboration
-                across sectors.
+                Access to a set of tax and financial incentives, specially
+                designed to support firms in domiciling in Nairobi
               </p>
             </div>
 
@@ -80,7 +66,7 @@ const Home = () => {
               </div>
               <h3 className="text-lg font-semibold mb-4">Strategic Location</h3>
               <p className="text-neutral">
-                Positioned as a gateway to Africa, connecting businesses to
+                PPositioned as a gateway to Africa, connecting businesses to
                 global opportunities.
               </p>
             </div>
@@ -90,10 +76,13 @@ const Home = () => {
               <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl text-white font-bold">4</span>
               </div>
-              <h3 className="text-lg font-semibold mb-4">Sustainability</h3>
+              <h3 className="text-lg font-semibold mb-4">
+                A Thriving Start-Up Ecosystem
+              </h3>
               <p className="text-neutral">
-                Commitment to sustainable practices ensuring long-term economic
-                and environmental growth.
+                A vibrant hub of innovation, exceptional talent, and boundless
+                opportunities for technology and sustainability in the heart of
+                Africa
               </p>
             </div>
           </div>
@@ -210,85 +199,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-base-100 py-16">
-        <div className="max-w-screen-lg mx-auto text-left relative">
-          <h2 className="text-2xl md:text-4xl font-light uppercase text-primary pb-12">
-            What’s on in NIFC
-          </h2>
-
-          <div
-            ref={carouselRef}
-            className="carousel carousel-end w-full h-fit rounded-none flex overflow-x-auto space-x-4 scrollbar-hide"
-          >
-            {/* Slide 1 */}
-            <div className="carousel-item w-full flex-shrink-0">
-              <div className="card lg:card-side bg-base-100 h-fit">
-                <figure className="w-1/2">
-                  <img
-                    src="https://images.unsplash.com/photo-1669127300649-940337f1487e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmFpcm9iaXxlbnwwfHwwfHx8MA%3D%3D"
-                    alt="Article 1"
-                    className="object-cover w-full h-48"
-                  />
-                </figure>
-                <div className="card-body w-1/2">
-                  <h2 className="card-title">The Future of Finance</h2>
-                  <p>
-                    Discover how financial systems in Africa are transforming,
-                    enabling businesses to thrive and investors to prosper.
-                  </p>
-                  <p>
-                    Discover how financial systems in Africa are transforming,
-                    enabling businesses to thrive and investors to prosper.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Add more slides as needed */}
-            {Array.from({ length: 3 }).map((_, index) => (
-              <div key={index} className="carousel-item w-full flex-shrink-0">
-                <div className="card lg:card-side bg-base-100 h-fit">
-                  <figure className="w-1/2">
-                    <img
-                      src="https://images.unsplash.com/photo-1669127300649-940337f1487e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmFpcm9iaXxlbnwwfHwwfHx8MA%3D%3D"
-                      alt={`Article ${index + 2}`}
-                      className="object-cover h-full w-full"
-                    />
-                  </figure>
-                  <div className="card-body w-1/2">
-                    <h2 className="card-title">Article {index + 2}</h2>
-                    <p>
-                      Explore insights into transformative trends shaping the
-                      future of finance.
-                    </p>
-                    <p>
-                      Explore insights into transformative trends shaping the
-                      future of finance.
-                    </p>
-                    {/* <div className="card-actions justify-start">
-                      <button className="btn btn-primary">Read More</button>
-                    </div> */}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Navigation Buttons */}
-          <button
-            className="absolute left-4 top-1/3 transform -translate-y-1/2 btn btn-circle"
-            onClick={scrollLeft}
-          >
-            ❮
-          </button>
-          <button
-            className="absolute right-4 top-1/3 transform -translate-y-1/2 btn btn-circle"
-            onClick={scrollRight}
-          >
-            ❯
-          </button>
-        </div>
-      </div>
+      <HomePageCarousel />
 
       {/* Section 3: Target Sectors */}
       <div className="h-screen flex flex-col justify-center items-center font-light">
@@ -305,16 +216,19 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="sm:text-md md:text-xl w-full flex justify-center items-center text-center m-14">
+          <div className="sm:text-md md:text-xl w-full flex justify-center items-center m-14 max-w-5xl">
             <div className="grid grid-cols-3 grid-rows-2 h-fit gap-4 p-4">
               {/* First column spanning 2 rows */}
               <div className="row-span-2 hover:text-primary">
                 <Link
-                  to="/green-finance"
+                  to="/multinationals"
                   className="card bg-base-300 shadow-md h-full rounded-none"
                 >
                   <div className="card-body">
-                    <h2 className="card-title ">Green Finance</h2>
+                    <h3 className="card-title text-left">
+                      Regional Headquarters, Multinational HQ’s and Holding
+                      Companies
+                    </h3>
                   </div>
                 </Link>
               </div>
@@ -322,21 +236,21 @@ const Home = () => {
               {/* Second column */}
               <div className="hover:text-primary">
                 <Link
-                  to="/investment-funds"
+                  to="/green-finance"
                   className="card bg-base-300 shadow-md h-full rounded-none"
                 >
                   <div className="card-body">
-                    <h2 className="card-title ">Investment Funds</h2>
+                    <h3 className="card-title text-left">Green Finance</h3>
                   </div>
                 </Link>
               </div>
               <div className="hover:text-primary">
                 <Link
-                  to="/multinationals"
+                  to="/fintech"
                   className="card bg-base-300 shadow-md h-full rounded-none"
                 >
                   <div className="card-body">
-                    <h2 className="card-title ">Multinational HQs</h2>
+                    <h3 className="card-title text-left">FinTech</h3>
                   </div>
                 </Link>
               </div>
@@ -344,21 +258,25 @@ const Home = () => {
               {/* Third column */}
               <div className="hover:text-primary">
                 <Link
-                  to="/professional-services"
+                  to="/investment-funds"
                   className="card bg-base-300 shadow-md h-full rounded-none"
                 >
                   <div className="card-body">
-                    <h2 className="card-title ">Professional Services</h2>
+                    <h2 className="card-title text-left">
+                      Investment Funds, Private Equity & Venture Capital
+                    </h2>
                   </div>
                 </Link>
               </div>
               <div className="hover:text-primary">
                 <Link
-                  to="/other"
+                  to="/professional-services"
                   className="card bg-base-300 shadow-md h-full rounded-none"
                 >
                   <div className="card-body">
-                    <h2 className="card-title ">Other</h2>
+                    <h3 className="card-title text-left">
+                      Professional Services
+                    </h3>
                   </div>
                 </Link>
               </div>
@@ -378,7 +296,7 @@ const Home = () => {
               <div className="grid grid-cols-4 grid-rows-1 h-full gap-4 p-4">
                 {/* Column 1 */}
                 <div>
-                  <Link to="/target-sector">
+                  <Link to="/discover-nifc">
                     <div className="card bg-base-100 image-full h-fit rounded-none transition-shadow ease-in-out duration-300 hover:rounded-lg hover:shadow-xl">
                       <figure>
                         <img
@@ -387,47 +305,13 @@ const Home = () => {
                         />
                       </figure>
                       <div className="card-body flex w-full justify-center rounded-none">
-                        <h2 className="card-title">Target sectors</h2>
+                        <h2 className="card-title text-sm text-center">Discover the NIFC</h2>
                       </div>
                     </div>
                   </Link>
                 </div>
 
                 {/* Column 2 */}
-                <div>
-                  <Link to="/start-business">
-                    <div className="card bg-base-100 image-full h-fit rounded-none transition-shadow ease-in-out duration-300 hover:rounded-lg hover:shadow-xl">
-                      <figure>
-                        <img
-                          src="https://images.unsplash.com/photo-1669127300649-940337f1487e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmFpcm9iaXxlbnwwfHwwfHx8MA%3D%3D"
-                          alt="Green Finance"
-                        />
-                      </figure>
-                      <div className="card-body flex w-full justify-center rounded-none">
-                        <h2 className="card-title">Start a Business</h2>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-
-                {/* Column 3 */}
-                <div>
-                  <Link to="/application-process">
-                    <div className="card bg-base-100 image-full h-fit rounded-none transition-shadow ease-in-out duration-300 hover:rounded-lg hover:shadow-xl">
-                      <figure>
-                        <img
-                          src="https://images.unsplash.com/photo-1669127300649-940337f1487e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmFpcm9iaXxlbnwwfHwwfHx8MA%3D%3D"
-                          alt="Green Finance"
-                        />
-                      </figure>
-                      <div className="card-body flex w-full justify-center rounded-none">
-                        <h2 className="card-title">Application Process</h2>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-
-                {/* Column 4 */}
                 <div>
                   <Link to="/operating-in-nifc">
                     <div className="card bg-base-100 image-full h-fit rounded-none transition-shadow ease-in-out duration-300 hover:rounded-lg hover:shadow-xl">
@@ -438,7 +322,43 @@ const Home = () => {
                         />
                       </figure>
                       <div className="card-body flex w-full justify-center rounded-none">
-                        <h2 className="card-title">Operating in the NIFC</h2>
+                        <h2 className="card-title text-sm text-center">Operating in the NIFC</h2>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+
+                {/* Column 3 */}
+                <div>
+                  <Link to="/start-application">
+                    <div className="card bg-base-100 image-full h-fit rounded-none transition-shadow ease-in-out duration-300 hover:rounded-lg hover:shadow-xl">
+                      <figure>
+                        <img
+                          src="https://images.unsplash.com/photo-1669127300649-940337f1487e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmFpcm9iaXxlbnwwfHwwfHx8MA%3D%3D"
+                          alt="Green Finance"
+                        />
+                      </figure>
+                      <div className="card-body flex w-full justify-center rounded-none">
+                        <h2 className="card-title text-sm text-center">
+                          The NIFC Application Process
+                        </h2>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+
+                {/* Column 4 */}
+                <div>
+                  <Link to="/contact">
+                    <div className="card bg-base-100 image-full h-fit rounded-none transition-shadow ease-in-out duration-300 hover:rounded-lg hover:shadow-xl">
+                      <figure>
+                        <img
+                          src="https://images.unsplash.com/photo-1669127300649-940337f1487e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmFpcm9iaXxlbnwwfHwwfHx8MA%3D%3D"
+                          alt="Green Finance"
+                        />
+                      </figure>
+                      <div className="card-body flex w-full justify-center rounded-none">
+                        <h2 className="card-title text-sm text-center">Contact Us</h2>
                       </div>
                     </div>
                   </Link>
