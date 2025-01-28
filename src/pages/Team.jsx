@@ -11,35 +11,66 @@ const Team = () => {
   ];
 
   const steeringCouncilMembers = [
+    
     {
-      name: "Jane Mwangi",
-      role: "Chairperson, Steering Council",
-      bio: "Jane has been leading the council for over 5 years with remarkable success...",
+      name: "H.E., Dr. William Ruto",
+      role: "Chairperson",
+      bio: "President of the Republic of Kenya",
+      image:"william_ruto"
     },
     {
-      name: "Michael Ochieng",
-      role: "Policy Advisor",
-      bio: "Michael advises on policy and strategic direction...",
+      name: "Kithure Kindiki",
+      role: "Deputy Chairperson ",
+      bio: "Deputy President of the Republic of Kenya",
+      image:"kithure_kindiki"
     },
     {
-      name: "Grace Wanjiru",
-      role: "Head of Legal Affairs",
-      bio: "Grace is responsible for overseeing legal matters and ensuring compliance...",
+      name: "Hon. FCPA John Mbadi Ng’ongo EGH",
+      role: "",
+      bio: "Cabinet Secretary, National Treasury",
+      image:"john_mbadi"
     },
     {
-      name: "Peter Njoroge",
-      role: "Director of Communications",
-      bio: "Peter manages the external and internal communications for the council...",
+      name: "Dorcas Oduor",
+      role: "",
+      bio: "Attorney General.",
+      image: "dorcas_oduor"
     },
     {
-      name: "Susan Otieno",
-      role: "Financial Strategist",
-      bio: "Susan is a seasoned financial strategist with a focus on sustainable growth...",
+      name: "Dr. Kamau Thugge",
+      role: "",
+      bio: "Governor, Central Bank of Kenya",
+      image: "dr_thuge"
     },
     {
-      name: "Kevin Mutua",
-      role: "Project Manager",
-      bio: "Kevin leads key projects and initiatives that align with the council’s goals...",
+      name: "Wycliffe Shamiah",
+      role: "",
+      bio: "Chief Executive Officer, Capital Markets Authority.",
+      image: "wyclife_chamia"
+    },
+    {
+      name: "Godfrey Kiptum",
+      role: "",
+      bio: "Chief Executive Officer, Insurance Regulatory Authority",
+      image: "godfrey_kiptum"
+    },
+    {
+      name: "Charles Machira",
+      role: "",
+      bio: "Chief Executive Officer, Retirement Benefits Authority",
+      image: "c_macharia"
+    },
+    {
+      name: "Daniel Mainda",
+      role: "",
+      bio: "Chief Executive Officer, Nairobi International Financial Centre Authority",
+      image: "daniel_mainda"
+    },
+    {
+      name: "Michael Kamiru Kamau",
+      role: "",
+      bio: "Chairperson, Nairobi International Financial Centre Authority",
+      image: "michael_kamiru"
     },
   ];
 
@@ -47,37 +78,81 @@ const Team = () => {
     {
       name: "Michael Kamiru Kamau",
       role: "Chairperson, NIFC",
-      bio: "Michael Kamiru Kamau has over 20 years of experience in the corporate sector...",
+      bio: "",
       image: "michael_kamiru"
     },
     {
       name: "Darshan Shah",
-      role: "Director",
-      bio: "Darshan Shah has been a director for 10 years and specializes in finance...",
+      role: "Directorc, NIFC",
+      bio: "",
       image: "darshan_shah"
     },
+    {
+      name: "Tonia Mutiso Kariuki",
+      role: "Directorc, NIFC",
+      bio: "",
+      image: "tonia_mutiso"
+    },
+    {
+      name: "Francis Mutua",
+      role: "ISC Rep",
+      bio: "",
+      image: "francis_mutua"
+    },
+    {
+      name: "Dinah Mboje",
+      role: "Director, Office of the Attorney General rep",
+      bio: "",
+      image: "dinah_mboje"
+    },
+    {
+      name: "Michael Maina",
+      role: "Director",
+      bio: "",
+      image: "michael_maina"
+    },
+    {
+      name: "James Akali Agembe",
+      role: "Director",
+      bio: "",
+      image: "james_akali"
+    },
+    {
+      name: "Samuel Kiptorus",
+      role: "Director, The National Treasury rep ",
+      bio: "",
+      image: "kiptorus"
+    },
+    
   ];
 
   const managementMembers = [
     {
-      name: "Alice Kamau",
-      role: "Chief Executive Officer",
-      bio: "Alice has been the CEO for 3 years and is focused on innovation...",
+      name: "Daniel Mainda",
+      role: "Chief Executive Officer, Nairobi International Financial Centre Authority",
+      bio: "",
+      image: "daniel_mainda"
     },
     {
-      name: "Brian Mwangi",
-      role: "Ag. Director Finance",
-      bio: "Brian has over 15 years of experience in corporate finance...",
+      name: "Seth Onyango",
+      role: "Ag. Head of Finance, NIFC",
+      bio: "",
     },
     {
-      name: "Cynthia Njoroge",
+      name: "Munzher Rana",
       role: "Senior Analyst",
-      bio: "Cynthia provides strategic insights and data analysis to support decision-making...",
+      bio: "",
+      image: "munzher"
     },
     {
-      name: "David Otieno",
+      name: "Jack Omino",
       role: "Senior Analyst",
-      bio: "David specializes in financial forecasting and market analysis...",
+      bio: "",
+    },
+    {
+      name: "Nelson Mandela Magunga",
+      role: "Senior Analyst",
+      bio: "",
     },
   ];
 
