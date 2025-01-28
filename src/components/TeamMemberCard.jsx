@@ -50,7 +50,7 @@ const TeamMemberCard = ({ name, role, image, bio, category, index }) => {
               <div className="ml-6">
                 <h3 className="font-bold text-xl">{name}</h3>
                 <p className="text-gray-600">{role}</p>
-                <p className="mt-4 text-gray-800">{bio}</p>
+                {/* <p className="mt-4 text-gray-800">{bio}</p> */}
               </div>
             </div>
           </div>
