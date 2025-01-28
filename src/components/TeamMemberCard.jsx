@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import teamMember1 from "../assets/michael_kamiru.jpg";
 import teamMember2 from "../assets/darshan_shah.jpg";
-import defaultAvatar from "https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"; 
+import defaultAvatar from "../assets/default-avatar.jpg"; 
 const TeamMemberCard = ({ name, role, image, bio, category, index }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => setIsModalOpen(true);
