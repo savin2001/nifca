@@ -1,6 +1,7 @@
 import React from "react";
 import BreadCrumbMenu from "../components/BreadCrumbMenu";
 import { Link } from "react-router-dom";
+import TeamSection from "../components/TeamSection";
 
 const Team = () => {
   // Define breadcrumb links
@@ -8,6 +9,76 @@ const Team = () => {
     { to: "/discover-nifc", label: "Discover the NIFC" },
     { to: "#", label: "Our Team" },
   ];
+
+  const steeringCouncilMembers = [
+    {
+      name: "Jane Mwangi",
+      role: "Chairperson, Steering Council",
+      bio: "Jane has been leading the council for over 5 years with remarkable success...",
+    },
+    {
+      name: "Michael Ochieng",
+      role: "Policy Advisor",
+      bio: "Michael advises on policy and strategic direction...",
+    },
+    {
+      name: "Grace Wanjiru",
+      role: "Head of Legal Affairs",
+      bio: "Grace is responsible for overseeing legal matters and ensuring compliance...",
+    },
+    {
+      name: "Peter Njoroge",
+      role: "Director of Communications",
+      bio: "Peter manages the external and internal communications for the council...",
+    },
+    {
+      name: "Susan Otieno",
+      role: "Financial Strategist",
+      bio: "Susan is a seasoned financial strategist with a focus on sustainable growth...",
+    },
+    {
+      name: "Kevin Mutua",
+      role: "Project Manager",
+      bio: "Kevin leads key projects and initiatives that align with the council’s goals...",
+    },
+  ];
+
+  const boardMembers = [
+    {
+      name: "John Doe",
+      role: "Chairperson, NIFC",
+      bio: "John has over 20 years of experience in the corporate sector...",
+    },
+    {
+      name: "Jane Smith",
+      role: "Director",
+      bio: "Jane has been a director for 10 years and specializes in finance...",
+    },
+  ];
+
+  const managementMembers = [
+    {
+      name: "Alice Kamau",
+      role: "Chief Executive Officer",
+      bio: "Alice has been the CEO for 3 years and is focused on innovation...",
+    },
+    {
+      name: "Brian Mwangi",
+      role: "Ag. Director Finance",
+      bio: "Brian has over 15 years of experience in corporate finance...",
+    },
+    {
+      name: "Cynthia Njoroge",
+      role: "Senior Analyst",
+      bio: "Cynthia provides strategic insights and data analysis to support decision-making...",
+    },
+    {
+      name: "David Otieno",
+      role: "Senior Analyst",
+      bio: "David specializes in financial forecasting and market analysis...",
+    },
+  ];
+
   return (
     <div className="relative">
       {/* Hero Carousel */}
@@ -41,215 +112,13 @@ const Team = () => {
         </h2>
       </div>
 
-      {/* Team Members */}
       <div className="max-w-screen-lg mx-auto text-left flex flex-col">
-        {/* Board */}
-        <div className="flex justify-center items-center flex-col">
-          <h2 className="text-center mb-8 uppercase text-primary text-3xl">
-            Board
-          </h2>
-          <div className="w-full p-6 bg-base-100">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              {/* Example Member 1 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
-                <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
-                  alt="Board Member 1"
-                  className="w-full h-fit object-cover rounded-md mb-4"
-                />
-                <h3 className="text-lg font-semibold mb-2">John Doe</h3>
-                <p className="text-gray-600 mb-4">Chairperson, NIFC</p>
-              </div>
-
-              {/* Example Member 2 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
-                <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
-                  alt="Board Member 2"
-                  className="w-full h-fit object-cover rounded-md mb-4"
-                />
-                <h3 className="text-lg font-semibold mb-2">Jane Smith</h3>
-                <p className="text-gray-600 mb-4">Chief Executive Officer</p>
-              </div>
-
-              {/* Example Member 3 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
-                <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
-                  alt="Board Member 3"
-                  className="w-full h-fit object-cover rounded-md mb-4"
-                />
-                <h3 className="text-lg font-semibold mb-2">Michael Brown</h3>
-                <p className="text-gray-600 mb-4">Chief Financial Officer</p>
-              </div>
-
-              {/* Example Member 4 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
-                <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
-                  alt="Board Member 4"
-                  className="w-full h-fit object-cover rounded-md mb-4"
-                />
-                <h3 className="text-lg font-semibold mb-2">Sarah Wilson</h3>
-                <p className="text-gray-600 mb-4">Head of Strategy</p>
-              </div>
-
-              {/* Example Member 5 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
-                <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
-                  alt="Board Member 5"
-                  className="w-full h-fit object-cover rounded-md mb-4"
-                />
-                <h3 className="text-lg font-semibold mb-2">David Lee</h3>
-                <p className="text-gray-600 mb-4">General Counsel</p>
-              </div>
-
-              {/* Example Member 6 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
-                <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
-                  alt="Board Member 6"
-                  className="w-full h-fit object-cover rounded-md mb-4"
-                />
-                <h3 className="text-lg font-semibold mb-2">Emily Johnson</h3>
-                <p className="text-gray-600 mb-4">Director of Operations</p>
-              </div>
-
-              {/* Example Member 6 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
-                <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
-                  alt="Board Member 6"
-                  className="w-full h-fit object-cover rounded-md mb-4"
-                />
-                <h3 className="text-lg font-semibold mb-2">Emily Johnson</h3>
-                <p className="text-gray-600 mb-4">Director of Operations</p>
-              </div>
-
-              {/* Example Member 6 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
-                <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
-                  alt="Board Member 6"
-                  className="w-full h-fit object-cover rounded-md mb-4"
-                />
-                <h3 className="text-lg font-semibold mb-2">Emily Johnson</h3>
-                <p className="text-gray-600 mb-4">Director of Operations</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Management */}
-        <div className="flex justify-center items-center flex-col mt-20">
-          <h2 className="text-center mb-8 uppercase text-primary text-3xl">
-            Management
-          </h2>
-          <div className="w-full p-6 bg-base-100">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Member 1 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300 flex flex-row w-full justify-between items-center">
-                <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
-                  alt="Management Member 1"
-                  className="w-fit h-full object-cover rounded-md mb-4"
-                />
-                <div className="">
-                  <h3 className="text-lg font-semibold mb-2">Alice Kamau</h3>
-                  <p className="text-gray-600 mb-4">Chief Executive Officer</p>
-                </div>
-              </div>
-
-              {/* Member 2 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300 flex flex-row w-full justify-between items-center">
-                <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
-                  alt="Management Member 2"
-                  className="w-fit h-full object-cover rounded-md mb-4"
-                />
-                <div className="">
-                  <h3 className="text-lg font-semibold mb-2">Brian Mwangi</h3>
-                  <p className="text-gray-600 mb-4">Chief Operations Officer</p>
-                </div>
-              </div>
-
-              {/* Member 3 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300 flex flex-row w-full justify-between items-center">
-                <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
-                  alt="Management Member 3"
-                  className="w-fit h-full object-cover rounded-md mb-4"
-                />
-                <div className="">
-                  <h3 className="text-lg font-semibold mb-2">
-                    Cynthia Njoroge
-                  </h3>
-                  <p className="text-gray-600 mb-4">Chief Financial Officer</p>
-                </div>
-              </div>
-
-              {/* Member 4 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300 flex flex-row w-full justify-between items-center">
-                <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
-                  alt="Management Member 4"
-                  className="w-fit h-full object-cover rounded-md mb-4"
-                />
-                <div className="">
-                  <h3 className="text-lg font-semibold mb-2">David Otieno</h3>
-                  <p className="text-gray-600 mb-4">Director of Strategy</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Steering Committee */}
-        <div className="flex justify-center items-center flex-col mt-20">
-          <h2 className="text-center mb-8 uppercase text-primary text-3xl">
-            Steering Committee
-          </h2>
-          <div className="w-full p-6 bg-base-100">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Member 1 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
-                <h3 className="text-lg font-semibold mb-2">Jane Mwangi</h3>
-                <p className="text-gray-600">Chairperson, Steering Committee</p>
-              </div>
-
-              {/* Member 2 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
-                <h3 className="text-lg font-semibold mb-2">Michael Ochieng</h3>
-                <p className="text-gray-600">Policy Advisor</p>
-              </div>
-
-              {/* Member 3 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
-                <h3 className="text-lg font-semibold mb-2">Grace Wanjiru</h3>
-                <p className="text-gray-600">Head of Legal Affairs</p>
-              </div>
-
-              {/* Member 4 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
-                <h3 className="text-lg font-semibold mb-2">Peter Njoroge</h3>
-                <p className="text-gray-600">Director of Communications</p>
-              </div>
-
-              {/* Member 5 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
-                <h3 className="text-lg font-semibold mb-2">Susan Otieno</h3>
-                <p className="text-gray-600">Financial Strategist</p>
-              </div>
-
-              {/* Member 6 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
-                <h3 className="text-lg font-semibold mb-2">Kevin Mutua</h3>
-                <p className="text-gray-600">Project Manager</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <TeamSection
+          category="Steering Council"
+          members={steeringCouncilMembers}
+        />
+        <TeamSection category="Board" members={boardMembers} />
+        <TeamSection category="Management" members={managementMembers} />
       </div>
 
       {/* Section 3 */}
@@ -258,7 +127,10 @@ const Team = () => {
           <button className="capitalize flex-grow btn btn-ghost btn-lg text-3xl font-light">
             Start application ❯
           </button>
-          <Link to="/contact" className="capitalize flex-grow btn btn-ghost  btn-lg text-3xl font-light">
+          <Link
+            to="/contact"
+            className="capitalize flex-grow btn btn-ghost  btn-lg text-3xl font-light"
+          >
             Make an enquiry ❯
           </Link>
         </div>
@@ -268,4 +140,3 @@ const Team = () => {
 };
 
 export default Team;
-

@@ -96,13 +96,13 @@ const Carousel = ({ items }) => {
 
         {/* Navigation Buttons */}
         <button
-          className="absolute left-4 top-1/3 transform -translate-y-1/2 btn btn-circle"
+          className="absolute left-4 top-1/3 transform -translate-y-1/2 btn btn-circle animate-none"
           onClick={scrollLeft}
         >
           ❮
         </button>
         <button
-          className="absolute right-4 top-1/3 transform -translate-y-1/2 btn btn-circle"
+          className="absolute right-4 top-1/3 transform -translate-y-1/2 btn btn-circle animate-none"
           onClick={scrollRight}
         >
           ❯

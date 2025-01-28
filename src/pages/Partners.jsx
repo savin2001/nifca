@@ -56,11 +56,11 @@ const KeyPartners = () => {
               <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
                   src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
-                  alt="Board Member 1"
+                  alt="Partner 1"
                   className="w-full h-fit object-cover rounded-md mb-4"
                 />
                 <h3 className="text-lg font-semibold mb-2 text-center ">
-                  World Bank Group
+                  Insurance Regulatory Authority
                 </h3>
               </div>
 
@@ -68,29 +68,19 @@ const KeyPartners = () => {
               <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
                   src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
-                  alt="Board Member 1"
+                  alt="Partner 2"
                   className="w-full h-fit object-cover rounded-md mb-4"
                 />
-                <h3 className="text-lg font-semibold mb-2 text-center ">IFC</h3>
+                <h3 className="text-lg font-semibold mb-2 text-center ">
+                  Retirement Benefits Authority
+                </h3>
               </div>
 
               {/* Partner 3 */}
               <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
                   src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
-                  alt="Board Member 1"
-                  className="w-full h-fit object-cover rounded-md mb-4"
-                />
-                <h3 className="text-lg font-semibold mb-2 text-center ">
-                  Nairobi Securities Exchange
-                </h3>
-              </div>
-
-              {/* Partner 4 */}
-              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
-                <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
-                  alt="Board Member 1"
+                  alt="Partner 3"
                   className="w-full h-fit object-cover rounded-md mb-4"
                 />
                 <h3 className="text-lg font-semibold mb-2 text-center ">
@@ -98,15 +88,27 @@ const KeyPartners = () => {
                 </h3>
               </div>
 
+              {/* Partner 4 */}
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
+                <img
+                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+                  alt="Partner 4"
+                  className="w-full h-fit object-cover rounded-md mb-4"
+                />
+                <h3 className="text-lg font-semibold mb-2 text-center ">
+                  Capital Markets Authority
+                </h3>
+              </div>
+
               {/* Partner 5 */}
               <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
                   src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
-                  alt="Board Member 1"
+                  alt="Partner 5"
                   className="w-full h-fit object-cover rounded-md mb-4"
                 />
                 <h3 className="text-lg font-semibold mb-2 text-center ">
-                  KPMG
+                  Directorate for Immigration Services
                 </h3>
               </div>
 
@@ -114,10 +116,108 @@ const KeyPartners = () => {
               <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
                   src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
-                  alt="Board Member 1"
+                  alt="Partner 6"
                   className="w-full h-fit object-cover rounded-md mb-4"
                 />
-                <h3 className="text-lg font-semibold mb-2 text-center ">PwC</h3>
+                <h3 className="text-lg font-semibold mb-2 text-center ">
+                  Kenya Revenue Authority
+                </h3>
+              </div>
+
+              {/* Partner 7 */}
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
+                <img
+                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+                  alt="Partner 7"
+                  className="w-full h-fit object-cover rounded-md mb-4"
+                />
+                <h3 className="text-lg font-semibold mb-2 text-center ">
+                  Business Registration Service
+                </h3>
+              </div>
+
+              {/* Partner 8 */}
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
+                <img
+                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+                  alt="Partner 8"
+                  className="w-full h-fit object-cover rounded-md mb-4"
+                />
+                <h3 className="text-lg font-semibold mb-2 text-center ">
+                  United National Development Program
+                </h3>
+              </div>
+
+              {/* Partner 9 */}
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
+                <img
+                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+                  alt="Partner 9"
+                  className="w-full h-fit object-cover rounded-md mb-4"
+                />
+                <h3 className="text-lg font-semibold mb-2 text-center ">
+                  UN Financial Centres for Sustainability (FC4S)
+                </h3>
+              </div>
+
+              {/* Partner 10 */}
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
+                <img
+                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+                  alt="Partner 10"
+                  className="w-full h-fit object-cover rounded-md mb-4"
+                />
+                <h3 className="text-lg font-semibold mb-2 text-center ">
+                  UK Foreign Commonwealth and Development Office
+                </h3>
+              </div>
+
+              {/* Partner 11 */}
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
+                <img
+                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+                  alt="Partner 11"
+                  className="w-full h-fit object-cover rounded-md mb-4"
+                />
+                <h3 className="text-lg font-semibold mb-2 text-center ">
+                  The National Treasury
+                </h3>
+              </div>
+
+              {/* Partner 12 */}
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
+                <img
+                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+                  alt="Partner 12"
+                  className="w-full h-fit object-cover rounded-md mb-4"
+                />
+                <h3 className="text-lg font-semibold mb-2 text-center ">
+                  TheCityUK
+                </h3>
+              </div>
+
+              {/* Partner 13 */}
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
+                <img
+                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+                  alt="Partner 13"
+                  className="w-full h-fit object-cover rounded-md mb-4"
+                />
+                <h3 className="text-lg font-semibold mb-2 text-center ">
+                  Kenya Association of Manufacturers
+                </h3>
+              </div>
+
+              {/* Partner 14 */}
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
+                <img
+                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+                  alt="Partner 14"
+                  className="w-full h-fit object-cover rounded-md mb-4"
+                />
+                <h3 className="text-lg font-semibold mb-2 text-center ">
+                  Nairobi Securities Exchange
+                </h3>
               </div>
             </div>
           </div>
@@ -130,7 +230,10 @@ const KeyPartners = () => {
           <button className="capitalize flex-grow btn btn-ghost btn-lg text-3xl font-light">
             Start application ❯
           </button>
-          <Link to="/contact" className="capitalize flex-grow btn btn-ghost  btn-lg text-3xl font-light">
+          <Link
+            to="/contact"
+            className="capitalize flex-grow btn btn-ghost  btn-lg text-3xl font-light"
+          >
             Make an enquiry ❯
           </Link>
         </div>

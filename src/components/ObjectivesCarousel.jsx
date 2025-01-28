@@ -22,7 +22,7 @@ export default function ObjectivesCarousel() {
   };
 
   return (
-    <div className="w-full flex flex-col justify-center items-center h-3/5 bg-base-100 sm:text-lg md:text-3xl relative py-12">
+    <div className="w-full flex flex-col justify-center items-center h-fit bg-base-100 sm:text-lg md:text-3xl relative py-12">
       <h2 className="text-center uppercase md:w-2/3 mb-12">Objectives</h2>
 
       {/* Carousel container */}
@@ -32,7 +32,7 @@ export default function ObjectivesCarousel() {
       >
         {[
           {
-            title: "Attract Global Investments",
+            title: "Attract Global Investment into Kenya",
             description:
               "Create a conducive environment for international investors to thrive in Kenya and Africa.",
             image:
@@ -60,7 +60,7 @@ export default function ObjectivesCarousel() {
               "https://images.unsplash.com/photo-1669127300649-940337f1487e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmFpcm9iaXxlbnwwfHwwfHx8MA%3D%3D",
           },
           {
-            title: "Enhance Regional Access",
+            title: "Establish Nairobi as Africa’s Premier Hub for Financial Services",
             description:
               "Position Nairobi as a gateway to financial opportunities across Africa.",
             image:
@@ -80,10 +80,10 @@ export default function ObjectivesCarousel() {
               />
 
               {/* Text Content */}
-              <h3 className="text-sm md:text-lg font-bold">{title}</h3>
-              <p className="text-sm text-gray-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <h3 className="text-sm font-bold">{title}</h3>
+              {/* <p className="text-sm text-gray-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 {description}
-              </p>
+              </p> */}
             </div>
           </div>
         ))}
