@@ -29,7 +29,7 @@ const Footer = () => {
 
           {/* Column 2: Discover NIFC */}
           <div>
-            <h3 className="font-light uppercase text-lg mb-4">Discover NIFC</h3>
+            <h3 className="font-light uppercase text-lg mb-4 text-primary">Discover NIFC</h3>
             <ul className="space-y-2">
               <li>
                 <Link
@@ -92,14 +92,56 @@ const Footer = () => {
 
           {/* Column 3: Why Nairobi */}
           <div>
-            <h3 className="font-light uppercase text-lg mb-4">Why Nairobi</h3>
+            <h3 className="font-light uppercase text-lg mb-4 text-primary">
+              Why Choose Nairobi
+            </h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   to="/why-nairobi"
                   className="text-neutral hover:text-primary transition"
                 >
-                  Why Choose Nairobi
+                  Why Nairobi
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/global-financial-gateway"
+                  className="text-neutral hover:text-primary transition"
+                >
+                  Global Financial Gateway
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/strength-in-financial-services"
+                  className="text-neutral hover:text-primary transition"
+                >
+                  Strength in Financial Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/sustainability"
+                  className="text-neutral hover:text-primary transition"
+                >
+                  Sustainability
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/tourism"
+                  className="text-neutral hover:text-primary transition"
+                >
+                  Tourism
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/lifestyle-nightlife"
+                  className="text-neutral hover:text-primary transition"
+                >
+                  Lifestyle & Nightlife
                 </Link>
               </li>
             </ul>
@@ -107,14 +149,54 @@ const Footer = () => {
 
           {/* Column 4: Join the NIFC */}
           <div>
-            <h3 className="font-light uppercase text-lg mb-4">Join the NIFC</h3>
+            <h3 className="font-light uppercase text-lg mb-4 text-primary">Join the NIFC</h3>
             <ul className="space-y-2">
               <li>
                 <Link
-                  to="/becoming-nifc-firm"
+                  to="/start-application"
                   className="text-neutral hover:text-primary transition"
                 >
-                  Join the NIFC
+                  Start Your Application
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/one-stop-shop"
+                  className="text-neutral hover:text-primary transition"
+                >
+                  NIFC One-Stop Shop
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/immigration-support"
+                  className="text-neutral hover:text-primary transition"
+                >
+                  Apply for Immigration Support Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/business-support"
+                  className="text-neutral hover:text-primary transition"
+                >
+                  Apply for Business Support Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/sdg-pipeline-builder"
+                  className="text-neutral hover:text-primary transition"
+                >
+                  The SDG Pipeline Builder
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/tech-accelerator"
+                  className="text-neutral hover:text-primary transition"
+                >
+                  NIFC Tech Accelerator
                 </Link>
               </li>
             </ul>
@@ -122,7 +204,7 @@ const Footer = () => {
 
           {/* Column 5: Media */}
           <div>
-            <h3 className="font-light uppercase text-lg mb-4">Media</h3>
+            <h3 className="font-light uppercase text-lg mb-4 text-primary">Media</h3>
             <ul className="space-y-2">
               <li>
                 <Link
@@ -137,7 +219,7 @@ const Footer = () => {
 
           {/* Column 6: Contact Information */}
           <div>
-            <h3 className="font-light uppercase text-lg mb-4">Contact Us</h3>
+            <h3 className="font-light uppercase text-lg mb-4 text-primary">Contact Us</h3>
             <p className="text-sm">
               <strong>Address:</strong> Treasury Building, Harambee Avenue,
               Nairobi, Kenya
@@ -151,40 +233,40 @@ const Footer = () => {
             {/* Social Media Icons */}
             <div className="flex space-x-4 mt-4">
               <Link
-                to="#"
-                className="text-neutral hover:text-primary transition text-2xl"
-              >
-                <FaFacebookF />
-              </Link>
-              <Link
-                to="#"
+                to="https://x.com/nifcafrica?lang=en"
                 className="text-neutral hover:text-primary transition text-2xl"
               >
                 <FaXTwitter />
               </Link>
               <Link
-                to="#"
+                to="https://ke.linkedin.com/company/nifcafrica"
                 className="text-neutral hover:text-primary transition text-2xl"
               >
                 <FaLinkedinIn />
               </Link>
               <Link
-                to="#"
+                to="https://www.facebook.com/nifc.africa"
+                className="text-neutral hover:text-primary transition text-2xl"
+              >
+                <FaFacebookF />
+              </Link>
+              <Link
+                to="https://www.youtube.com/channel/UCXpik-7bVhWUf848ygpggDw"
+                className="text-neutral hover:text-primary transition text-2xl"
+              >
+                <FaYoutube />
+              </Link>
+              <Link
+                to="https://instagram.com/nifcafrica/"
                 className="text-neutral hover:text-primary transition text-2xl"
               >
                 <FaInstagram />
               </Link>
               <Link
-                to="#"
+                to="https://wa.me/+254792000555"
                 className="text-neutral hover:text-primary transition text-2xl"
               >
                 <FaWhatsapp />
-              </Link>
-              <Link
-                to="#"
-                className="text-neutral hover:text-primary transition text-2xl"
-              >
-                <FaYoutube />
               </Link>
             </div>
           </div>

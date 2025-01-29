@@ -97,7 +97,7 @@ const Laws = () => {
 
       {/* Document Download Section */}
       <div className="max-w-screen-lg mx-auto text-left flex flex-col mt-20">
-        <h2 className="text-3xl font-light text-center mb-6">
+        <h2 className="text-3xl font-light text-primary text-center mb-6">
           Key Regulatory Documents
         </h2>
         <div className="grid grid-cols-1 gap-6">

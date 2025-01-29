@@ -34,25 +34,25 @@ const FloatingSocialButton = () => {
       {isOpen && (
         <div className="bg-base-100 shadow-lg rounded-lg p-4 mt-3 flex flex-col items-center space-y-4 transition-all duration-300 ease-in-out">
           <Link
-            to="#"
+            to="https://www.facebook.com/nifc.africa"
             className="text-neutral hover:text-primary transition text-2xl"
           >
             <FaFacebookF />
           </Link>
           <Link
-            to="#"
+            to="https://x.com/nifcafrica?lang=en"
             className="text-neutral hover:text-primary transition text-2xl"
           >
             <FaXTwitter />
           </Link>
           <Link
-            to="#"
+            to="https://ke.linkedin.com/company/nifcafrica"
             className="text-neutral hover:text-primary transition text-2xl"
           >
             <FaLinkedinIn />
           </Link>
           <Link
-            to="#"
+            to="https://instagram.com/nifcafrica/"
             className="text-neutral hover:text-primary transition text-2xl"
           >
             <FaInstagram />
@@ -64,7 +64,7 @@ const FloatingSocialButton = () => {
             <FaWhatsapp />
           </Link>
           <Link
-            to="#"
+            to="https://www.youtube.com/channel/UCXpik-7bVhWUf848ygpggDw"
             className="text-neutral hover:text-primary transition text-2xl"
           >
             <FaYoutube />

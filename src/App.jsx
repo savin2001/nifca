@@ -35,6 +35,7 @@ import BusinessSupport from "./pages/BusinessSupport";
 import SDGPipelineBuilder  from "./pages/SDGPipelineBuilder";
 import NIFCTechAccelerator from "./pages/NIFCTechAccelerator";
 import ComingSoon from "./pages/ComingSoon";
+import Careers from "./pages/Careers";
 // import StartYourApplication from "./pages/StartApplication";
 // import StartYourApplication from "./pages/StartApplication";
 // import StartYourApplication from "./pages/StartApplication";
@@ -79,7 +80,7 @@ function App() {
           <Route path="/lifestyle-nightlife" element={<Lifestyle />} />
           <Route path="/innovations" element={<Innovation />} />
           <Route path="/company-ledger" element={<ComingSoon />} />
-          <Route path="/careers" element={<ComingSoon />} />
+          <Route path="/careers" element={<Careers />} />
           <Route path="/start-application" element={<StartYourApplication />} />
           <Route path="/one-stop-shop" element={<NIFCOneStopShop />} />
           <Route path="/immigration-support" element={<ImmigrationSupport />} />
