@@ -94,7 +94,7 @@ const Team = () => {
     },
     {
       name: "Francis Mutua",
-      role: "ISC Rep",
+      role: "Director, NIFC",
       bio: "",
       image: "francis_mutua",
     },
@@ -106,13 +106,13 @@ const Team = () => {
     },
     {
       name: "Michael Maina",
-      role: "Director",
+      role: "Director, NIFC",
       bio: "",
       image: "michael_maina",
     },
     {
       name: "James Akali Agembe",
-      role: "Director",
+      role: "Director, NIFC",
       bio: "",
       image: "james_akali",
     },
