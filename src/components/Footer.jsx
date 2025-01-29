@@ -225,10 +225,10 @@ const Footer = () => {
               Nairobi, Kenya
             </p>
             <p className="text-sm mt-2">
-              <strong>Email:</strong> info@nifc.ke
+              <strong>Email:</strong> info@nifca.go.ke
             </p>
             <p className="text-sm mt-2">
-              <strong>Phone:</strong> +254 792 000 555
+              <strong>Phone:</strong> +254 793 000 555
             </p>
             {/* Social Media Icons */}
             <div className="flex space-x-4 mt-4">
@@ -263,7 +263,7 @@ const Footer = () => {
                 <FaInstagram />
               </Link>
               <Link
-                to="https://wa.me/+254792000555"
+                to="https://wa.me/+254793000555"
                 className="text-neutral hover:text-primary transition text-2xl"
               >
                 <FaWhatsapp />

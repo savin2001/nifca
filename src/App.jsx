@@ -81,12 +81,12 @@ function App() {
           <Route path="/innovations" element={<Innovation />} />
           <Route path="/company-ledger" element={<ComingSoon />} />
           <Route path="/careers" element={<Careers />} />
-          <Route path="/start-application" element={<StartYourApplication />} />
-          <Route path="/one-stop-shop" element={<NIFCOneStopShop />} />
-          <Route path="/immigration-support" element={<ImmigrationSupport />} />
-          <Route path="/business-support" element={<BusinessSupport />} />
-          <Route path="/sdg-pipeline-builder" element={<SDGPipelineBuilder  />} />
-          <Route path="/tech-accelerator" element={<NIFCTechAccelerator />} />
+          <Route path="/start-application" element={<ComingSoon />} />
+          <Route path="/one-stop-shop" element={<ComingSoon />} />
+          <Route path="/immigration-support" element={<ComingSoon />} />
+          <Route path="/business-support" element={<ComingSoon />} />
+          <Route path="/sdg-pipeline-builder" element={<ComingSoon  />} />
+          <Route path="/tech-accelerator" element={<ComingSoon />} />
           <Route path="/coming-soon" element={<ComingSoon />} />
           <Route path="/enquiry" element={<ComingSoon />} />
           <Route path="/enquiry" element={<ComingSoon />} />
