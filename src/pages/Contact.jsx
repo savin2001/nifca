@@ -112,6 +112,10 @@ const Contact = () => {
                 </div>
               </div>
               <div className="mb-4">
+                <label htmlFor="company" className="block text-sm font-medium">Company</label>
+                <input type="text" id="company" name="company" className="input input-bordered w-full" required onChange={handleChange} />
+              </div>
+              <div className="mb-4">
                 <label htmlFor="message" className="block text-sm font-medium">Message</label>
                 <textarea id="message" name="message" className="textarea textarea-bordered w-full" rows="4" required onChange={handleChange}></textarea>
               </div>
@@ -122,5 +126,5 @@ const Contact = () => {
       </div>
     );
 }
-// 
+
 export default Contact;
