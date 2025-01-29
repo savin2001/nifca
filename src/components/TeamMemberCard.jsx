@@ -50,16 +50,16 @@ const TeamMemberCard = ({ name, role, image, bio, category, index }) => {
   return (
     <>
       <div
-        className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300"
+        className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 hover:cursor-pointer transition duration-300"
         onClick={openModal}
       >
         <img
           src={getImage()}
           alt={name}
-          className="w-full h-fit object-cover rounded-md mb-4"
+          className="w-full h-80 object-cover rounded-md mb-4"
         />
-        <h3 className="text-lg font-semibold mb-2">{name}</h3>
-        <p className="text-gray-600">{role}</p>
+        <h3 className="text-lg font-semibold mb-2 text-center">{name}</h3>
+        <p className="text-neutral text-center">{role}</p>
       </div>
 
       {/* Modal */}
@@ -74,15 +74,15 @@ const TeamMemberCard = ({ name, role, image, bio, category, index }) => {
                 ✕
               </button>
             </form>
-            <div className="flex">
+            <div className="flex flex-col">
               <img
                 src={getImage()}
                 alt={name}
-                className="w-1/3 h-auto object-cover rounded-md"
+                className="w-full h-auto object-cover rounded-md"
               />
-              <div className="ml-6">
+              <div className="mt-4 text-center">
                 <h3 className="font-bold text-xl">{name}</h3>
-                <p className="text-gray-600">{role}</p>
+                <p className="text-neutral">{role}</p>
                 <p className="mt-4 text-gray-800">{bio}</p>
               </div>
             </div>

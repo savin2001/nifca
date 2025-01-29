@@ -11,66 +11,65 @@ const Team = () => {
   ];
 
   const steeringCouncilMembers = [
-    
     {
       name: "H.E., Dr. William Ruto",
       role: "Chairperson",
       bio: "President of the Republic of Kenya",
-      image:"william_ruto"
+      image: "william_ruto",
     },
     {
       name: "Kithure Kindiki",
       role: "Deputy Chairperson ",
       bio: "Deputy President of the Republic of Kenya",
-      image:"kithure_kindiki"
+      image: "kithure_kindiki",
     },
     {
       name: "Hon. FCPA John Mbadi Ng’ongo EGH",
-      role: "",
+      role: "Member",
       bio: "Cabinet Secretary, National Treasury",
-      image:"john_mbadi"
+      image: "john_mbadi",
     },
     {
       name: "Dorcas Oduor",
-      role: "",
+      role: "Member",
       bio: "Attorney General.",
-      image: "dorcas_oduor"
+      image: "dorcas_oduor",
     },
     {
       name: "Dr. Kamau Thugge",
-      role: "",
+      role: "Member",
       bio: "Governor, Central Bank of Kenya",
-      image: "dr_thuge"
+      image: "dr_thuge",
     },
     {
       name: "Wycliffe Shamiah",
-      role: "",
+      role: "Member",
       bio: "Chief Executive Officer, Capital Markets Authority.",
-      image: "wyclife_chamia"
+      image: "wyclife_chamia",
     },
     {
       name: "Godfrey Kiptum",
-      role: "",
+      role: "Member",
       bio: "Chief Executive Officer, Insurance Regulatory Authority",
-      image: "godfrey_kiptum"
+      image: "godfrey_kiptum",
     },
     {
       name: "Charles Machira",
-      role: "",
+      role: "Member",
       bio: "Chief Executive Officer, Retirement Benefits Authority",
-      image: "c_macharia"
+      image: "c_macharia",
     },
     {
       name: "Daniel Mainda",
-      role: "",
-      bio: "Chief Executive Officer, Nairobi International Financial Centre Authority",
-      image: "daniel_mainda"
+      role: "Member",
+      bio: "Chief Executive Officer, NIFC",
+      image: "daniel_mainda",
     },
     {
       name: "Michael Kamiru Kamau",
-      role: "",
-      bio: "Chairperson, Nairobi International Financial Centre Authority",
-      image: "michael_kamiru"
+      role: "Member",
+      bio: "Chairperson of the Board of Directors, NIFC",
+      image: "michael_kamiru",
     },
   ];
 
@@ -79,59 +78,58 @@ const Team = () => {
       name: "Michael Kamiru Kamau",
       role: "Chairperson, NIFC",
       bio: "",
-      image: "michael_kamiru"
+      image: "michael_kamiru",
     },
     {
       name: "Darshan Shah",
-      role: "Directorc, NIFC",
+      role: "Director, NIFC",
       bio: "",
-      image: "darshan_shah"
+      image: "darshan_shah",
     },
     {
       name: "Tonia Mutiso Kariuki",
-      role: "Directorc, NIFC",
+      role: "Director, NIFC",
       bio: "",
-      image: "tonia_mutiso"
+      image: "tonia_mutiso",
     },
     {
       name: "Francis Mutua",
       role: "ISC Rep",
       bio: "",
-      image: "francis_mutua"
+      image: "francis_mutua",
     },
     {
       name: "Dinah Mboje",
       role: "Director, Office of the Attorney General rep",
       bio: "",
-      image: "dinah_mboje"
+      image: "dinah_mboje",
     },
     {
       name: "Michael Maina",
       role: "Director",
       bio: "",
-      image: "michael_maina"
+      image: "michael_maina",
     },
     {
       name: "James Akali Agembe",
       role: "Director",
       bio: "",
-      image: "james_akali"
+      image: "james_akali",
     },
     {
       name: "Samuel Kiptorus",
       role: "Director, The National Treasury rep ",
       bio: "",
-      image: "kiptorus"
+      image: "kiptorus",
     },
-    
   ];
 
   const managementMembers = [
     {
       name: "Daniel Mainda",
-      role: "Chief Executive Officer, Nairobi International Financial Centre Authority",
+      role: "Chief Executive Officer, NIFC",
       bio: "",
-      image: "daniel_mainda"
+      image: "daniel_mainda",
     },
     {
       name: "Seth Onyango",
@@ -142,7 +140,7 @@ const Team = () => {
       name: "Munzher Rana",
       role: "Senior Analyst",
       bio: "",
-      image: "munzher"
+      image: "munzher",
     },
     {
       name: "Jack Omino",
@@ -200,13 +198,16 @@ const Team = () => {
 
       {/* Section 3 */}
       <div className="mt-12 flex flex-col justify-center items-center font-light">
-        <div className="bg-base-300 w-full  p-12 flex justify-between space-x-8">
-          <button className="capitalize flex-grow btn btn-ghost btn-lg text-3xl font-light">
+        <div className="bg-base-300 w-full p-12 flex justify-between space-x-8">
+          <Link
+            to="/start-application"
+            className="capitalize flex-grow btn btn-ghost btn-lg text-3xl font-light"
+          >
             Start application ❯
-          </button>
+          </Link>
           <Link
             to="/contact"
-            className="capitalize flex-grow btn btn-ghost  btn-lg text-3xl font-light"
+            className="capitalize flex-grow btn btn-ghost btn-lg text-3xl font-light"
           >
             Make an enquiry ❯
           </Link>

@@ -24,7 +24,7 @@ const FinancialServices = () => {
             <div className="hero-content text-neutral-content text-center">
               <div>
                 <h1 className="mb-5 text-5xl font-light uppercase">
-                Strength in Financial Services
+                  Strength in Financial Services
                 </h1>
               </div>
             </div>
@@ -35,25 +35,58 @@ const FinancialServices = () => {
       <BreadCrumbMenu links={breadcrumbLinks} />
       <div className="max-w-screen-lg mx-auto text-left flex flex-col mt-20">
         <p className="text-neutral text-lg font-light">
-        Nairobi’s financial services sector is one of the most advanced in Africa, boasting a wide array of offerings ranging from banking and insurance to capital markets and fintech innovation. The Nairobi Securities Exchange (NSE) is among the continent's most vibrant stock markets, playing a pivotal role in mobilizing capital for businesses and investors. The city is a pioneer in mobile banking, with services like M-Pesa revolutionizing financial inclusion and accessibility.
+          Nairobi has one of the most sophisticated and innovative financial
+          services sectors in Africa. It is home to 14 foreign banks, 30 local
+          banks, and 66 listed companies.
         </p>
         <br />
 
-        <p className="text-neutral">
-        Kenya’s regulatory framework supports innovation while ensuring stability in the financial sector. This balance has made Nairobi an attractive destination for investors and financial institutions seeking a robust and secure operating environment. Coupled with a skilled workforce and a culture of innovation, the city continues to thrive as a center for financial excellence in Africa.
+        <p className="text-neutral text-lg font-light">
+          Kenya plays a pivotal role in the Sub-Saharan market due to an
+          exciting financial ecosystem that is being fostered within its
+          borders. Its young population and dynamic private sector have led to
+          significant growth in the country’s technological infrastructure. 90%
+          of the population is banked, with the country striving for 100% by
+          2030.
         </p>
         <br />
 
-        
+        <p className="text-neutral text-lg font-light">
+          Kenya has been one of the most prominent locations for private equity
+          and venture capital investments, garnering in excess of $2 billion USD
+          from private equity firms and in excess of $700 million USD from
+          venture capital firms between 2016 and 2020. This places Kenya as the
+          most popular investment destination in the Sub-Saharan region,
+          accounting for 15% of private equity flows and 20% of venture capital
+          flows. It is home to approximately 50% of the 18 firms operating in
+          Africa with over $500 million USD in assets under management.
+        </p>
+        <br />
+
+        <p className="text-neutral text-lg font-light">
+          Despite the complications of the Covid-19 pandemic having a
+          destabilizing impact on Kenya’s economy, it rebounded at a rate of
+          10.1% year-on-year in the second quarter of 2021 as country-wide
+          lockdown restrictions were eased. This was the strongest pace of
+          expansion ever recorded in the country’s history. Kenya’s financial
+          and insurance markets followed this trend with a 9.9% growth rate in
+          the same period—a stark increase on the 4.4% of the previous year.
+        </p>
       </div>
 
       {/* Section 3 */}
       <div className="mt-12 flex flex-col justify-center items-center font-light">
         <div className="bg-base-300 w-full  p-12 flex justify-between space-x-8">
-          <button className="capitalize flex-grow btn btn-ghost btn-lg text-3xl font-light">
+          <Link
+            to="/start-application"
+            className="capitalize flex-grow btn btn-ghost btn-lg text-3xl font-light"
+          >
             Start application ❯
-          </button>
-          <Link to="/contact" className="capitalize flex-grow btn btn-ghost  btn-lg text-3xl font-light">
+          </Link>
+          <Link
+            to="/contact"
+            className="capitalize flex-grow btn btn-ghost  btn-lg text-3xl font-light"
+          >
             Make an enquiry ❯
           </Link>
         </div>

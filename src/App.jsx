@@ -47,7 +47,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/discover-nifc" element={<About />} />
-          <Route path="/apply" element={<ApplicationProcess />} />
+          <Route path="/apply" element={<ComingSoon />} />
           <Route path="/enquiry" element={<Enquiry />} />
           <Route path="/events" element={<Events />} />
           <Route path="/laws" element={<Laws />} />

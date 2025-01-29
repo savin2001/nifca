@@ -35,23 +35,58 @@ const FinancialGateway = () => {
       <BreadCrumbMenu links={breadcrumbLinks} />
       <div className="max-w-screen-lg mx-auto text-left flex flex-col mt-20">
         <p className="text-neutral text-lg font-light">
-          Nairobi has established itself as a critical gateway to global financial markets, connecting Africa to the rest of the world. Its strategic geographic location allows businesses to bridge time zones between Europe, Asia, and the Americas. This unique advantage makes it a prime location for multinational corporations looking to establish regional headquarters, ensuring seamless operations and market accessibility. Nairobi is also home to a robust financial infrastructure, hosting major international banks, investment firms, and fintech startups.
+          The Kenyan economy is the largest in East Africa; a main point of
+          entry to the larger 300-million East Africa Market and the regional
+          transportation and financial hub.
         </p>
         <br />
 
-        <p className="text-neutral">
-          The city’s well-developed transport and communication networks further enhance its appeal as a global financial hub. Jomo Kenyatta International Airport, one of Africa’s busiest, provides direct flights to major cities worldwide, making business travel convenient. Additionally, Nairobi's government policies and international trade agreements have fostered a supportive environment for financial growth, attracting foreign direct investment and catalyzing sustainable economic development.
+        <p className="text-neutral text-lg font-light">
+          With an annual growth rate of over 5% between 2010 and 2024, Kenya is
+          one of the fastest-growing economies in Africa. This continued growth
+          in GDP has been supported by ongoing public infrastructure projects,
+          strong public and private sector investment, and appropriate economic
+          and fiscal policies, reflecting the broad-based and diversified nature
+          of the Kenyan economy.
         </p>
         <br />
+
+        <p className="text-neutral text-lg font-light">
+          This sustained growth has positioned the country as a great place to
+          do business—moving it up to 56th place out of 190 economies in the
+          World Bank’s 2020 Ease of Doing Business survey, up from 61st in 2019
+          and 80 in 2018.
+        </p>
+        <br />
+
+        <p className="text-neutral text-lg font-light">
+          Kenya has been steadily recovering from the Covid-19 pandemic and has
+          seen its Foreign Direct Investment (FDI) rates increasing steadily. In
+          2022, FDI inflows increased by close to 64%, reaching $759 million and
+          steadily increasing.
+        </p>
+        <br />
+
+        <p className="text-neutral text-lg font-light">
+          Kenya’s financial sector is amongst the most vibrant, well-developed,
+          and diversified in the region and has the highest financial inclusion
+          in the region and globally.
+        </p>
       </div>
 
       {/* Section 3 */}
       <div className="mt-12 flex flex-col justify-center items-center font-light">
-        <div className="bg-base-300 w-full  p-12 flex justify-between space-x-8">
-          <button className="capitalize flex-grow btn btn-ghost btn-lg text-3xl font-light">
+        <div className="bg-base-300 w-full p-12 flex justify-between space-x-8">
+          <Link
+            to="/start-application"
+            className="capitalize flex-grow btn btn-ghost btn-lg text-3xl font-light"
+          >
             Start application ❯
-          </button>
-          <Link to="/contact" className="capitalize flex-grow btn btn-ghost  btn-lg text-3xl font-light">
+          </Link>
+          <Link
+            to="/contact"
+            className="capitalize flex-grow btn btn-ghost btn-lg text-3xl font-light"
+          >
             Make an enquiry ❯
           </Link>
         </div>

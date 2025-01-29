@@ -103,9 +103,12 @@ const GreenFinance = () => {
       {/* Section 3 */}
       <div className="mt-12 flex flex-col justify-center items-center font-light">
         <div className="bg-base-300 w-full  p-12 flex justify-between space-x-8">
-          <button className="capitalize flex-grow btn btn-ghost btn-lg text-3xl font-light">
+          <Link
+            to="/start-application"
+            className="capitalize flex-grow btn btn-ghost btn-lg text-3xl font-light"
+          >
             Start application ❯
-          </button>
+          </Link>
           <Link to="/contact" className="capitalize flex-grow btn btn-ghost  btn-lg text-3xl font-light">
             Make an enquiry ❯
           </Link>

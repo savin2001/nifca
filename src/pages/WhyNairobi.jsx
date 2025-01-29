@@ -8,14 +8,36 @@ const WhyNairobi = () => {
 
   // Define sub-pages for navigation
   const subPages = [
-    { to: "/global-financial-gateway", label: "Global Financial Gateway" },
+    {
+      to: "/global-financial-gateway",
+      label: "Global Financial Gateway",
+      description:
+        "The Kenyan economy is the largest in East Africa; a main point of entry to the larger - 300 million East Africa Market and the regional transportation and financial hub . ",
+    },
     {
       to: "/strength-in-financial-services",
       label: "Strength in Financial Services",
+      description:
+        "Nairobi has one of the most sophisticated and innovative financial services sectors in Africa. It is home to 14 foreign banks, 30 local banks and 66 listed companies.",
     },
-    { to: "/sustainability", label: "Sustainability" },
-    { to: "/tourism", label: "Tourism" },
-    { to: "/lifestyle-nightlife", label: "Lifestyle & Nightlife" },
+    {
+      to: "/sustainability",
+      label: "Sustainability",
+      description:
+        "Cutting edge financial solutions will tackle the threat of climate change and Kenya is leading the way on the continent. Kenya’s first green bond began trading on the Nairobi Securities Exchange... ",
+    },
+    {
+      to: "/tourism",
+      label: "Tourism",
+      description:
+        "Kenya is one of the world’s premier tourism destinations, offering diverse experiences from stunning beaches and blue waters to expansive savannahs and the majestic peaks of Mount Kenya.",
+    },
+    {
+      to: "/lifestyle-nightlife",
+      label: "Lifestyle & Nightlife",
+      description:
+        "State of the art medical facilities, top tier education, world class business facilities and a diverse arts scene sets Nairobi apart. The city is affordable, vibrant and the only city in the world to have a national park within its boundaries. ",
+    },
   ];
 
   return (
@@ -72,26 +94,22 @@ const WhyNairobi = () => {
                   {/* Image on the left */}
                   <div className="w-1/3 pr-4">
                     <img
-                      src="https://images.unsplash.com/photo-1669127300649-940337f1487e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmFpcm9iaXxlbnwwfHwwfHx8MA%3D%3D" // You can replace this with your actual image
+                      src="https://images.unsplash.com/photo-1669127300649-940337f1487e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmFpcm9iaXxlbnwwfHwwfHx8MA%3D%3D"
                       alt="Nairobi"
                       className="w-full h-full object-cover rounded-none"
                     />
                   </div>
                   {/* Text and button on the right */}
-
                   <div className="w-2/3 flex flex-col justify-between text-left">
                     <p className="text-neutral text-xl font-light mb-4">
-                      This is where you can put the first paragraph about the
-                      sub-page topic. It's concise and informative.
+                      {page.description}
                     </p>
-                    <p className="text-neutral text-sm mb-4">
-                      Here’s a second paragraph with more details or a
-                      continuation of the topic. You can provide further
-                      insights.
-                    </p>
-                    <button className="btn btn-outline btn-sm btn-primary capitalize self-start">
+                    <Link
+                      to={page.to}
+                      className="btn btn-outline btn-sm btn-primary capitalize self-start"
+                    >
                       Explore ❯
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -103,10 +121,16 @@ const WhyNairobi = () => {
       {/* Section 3 */}
       <div className="mt-12 flex flex-col justify-center items-center font-light">
         <div className="bg-base-300 w-full p-12 flex justify-between space-x-8">
-          <button className="capitalize flex-grow btn btn-ghost btn-lg text-3xl font-light">
+          <Link
+            to="/start-application"
+            className="capitalize flex-grow btn btn-ghost btn-lg text-3xl font-light"
+          >
             Start application ❯
-          </button>
-          <Link to="/contact" className="capitalize flex-grow btn btn-ghost btn-lg text-3xl font-light">
+          </Link>
+          <Link
+            to="/contact"
+            className="capitalize flex-grow btn btn-ghost btn-lg text-3xl font-light"
+          >
             Make an enquiry ❯
           </Link>
         </div>

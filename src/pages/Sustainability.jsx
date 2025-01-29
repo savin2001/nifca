@@ -35,24 +35,60 @@ const Sustainability = () => {
       <BreadCrumbMenu links={breadcrumbLinks} />
       <div className="max-w-screen-lg mx-auto text-left flex flex-col mt-20">
         <p className="text-neutral text-lg font-light">
-          Nairobi is leading the way in sustainability, integrating environmentally conscious practices into urban planning and business operations. The city is actively promoting renewable energy, with Kenya being a global leader in geothermal energy production. Initiatives such as eco-friendly building codes and sustainable waste management systems are shaping Nairobi into a green city of the future.
+          Cutting-edge financial solutions will tackle the threat of climate
+          change, and Kenya is leading the way on the continent. Kenya’s first
+          green bond began trading on the Nairobi Securities Exchange in January
+          2020, and in an effort to preserve rhino populations in the country,
+          Kenya became home to the first wildlife bond globally in March 2021.
         </p>
         <br />
 
-        <p className="text-neutral">
-          Moreover, the city has embraced sustainable development goals (SDGs) as a core part of its growth agenda. Public and private sectors are working together to create inclusive urban environments that prioritize clean energy, water conservation, and biodiversity. This commitment to sustainability not only enhances the quality of life for residents but also attracts global businesses with a focus on environmental responsibility.
+        <p className="text-neutral text-lg font-light">
+          Kenya is an emerging global green finance hub driven by both public
+          and private sector commitments. There are multiple Kenyan
+          organizations with sustainability commitments, with over 200
+          Kenyan-based SMEs officially committed to the UN Global Compact. The
+          shift towards sustainable finance can be seen through the issuance of
+          Kenya’s first green bond, which has already raised over 4.3 billion
+          Kenyan Shillings.
         </p>
         <br />
 
+        <p className="text-neutral text-lg font-light">
+          Through the Vision 2030 project, the Kenyan government has made
+          commitments to growing the green finance ecosystem in the country
+          through the implementation of multiple policies, frameworks, and
+          initiatives that govern climate action, as well as making a commitment
+          to reduce their greenhouse gas emissions by 32%. Furthermore, there
+          are over 10 policies or frameworks in place to govern climate change
+          action, such as the National Climate Change Action Plan, the National
+          Climate Finance Policy, and the upcoming Green Fiscal Policy.
+        </p>
+        <br />
+
+        <p className="text-neutral text-lg font-light">
+          Kenya’s importance as a significant hub of sustainability is
+          highlighted by its housing of the United Nations regional
+          headquarters. The Big Four programme, implemented by the President,
+          has been a national priority, focusing on the provision of Food and
+          Nutrition Security, Healthcare, Manufacturing, and Affordable Housing,
+          all of which align with key Sustainable Development Goals.
+        </p>
       </div>
 
       {/* Section 3 */}
       <div className="mt-12 flex flex-col justify-center items-center font-light">
-        <div className="bg-base-300 w-full  p-12 flex justify-between space-x-8">
-          <button className="capitalize flex-grow btn btn-ghost btn-lg text-3xl font-light">
+        <div className="bg-base-300 w-full p-12 flex justify-between space-x-8">
+          <Link
+            to="/start-application"
+            className="capitalize flex-grow btn btn-ghost btn-lg text-3xl font-light"
+          >
             Start application ❯
-          </button>
-          <Link to="/contact" className="capitalize flex-grow btn btn-ghost  btn-lg text-3xl font-light">
+          </Link>
+          <Link
+            to="/contact"
+            className="capitalize flex-grow btn btn-ghost btn-lg text-3xl font-light"
+          >
             Make an enquiry ❯
           </Link>
         </div>
