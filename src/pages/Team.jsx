@@ -151,6 +151,7 @@ const Team = () => {
       name: "Nelson Mandela Magunga",
       role: "Senior Analyst",
       bio: "",
+      image: "nelson",
     },
   ];
 

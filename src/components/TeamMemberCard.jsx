@@ -17,6 +17,7 @@ import teamMember16 from "../assets/michael_maina.png";
 import teamMember17 from "../assets/james_akali.jpg";
 import teamMember18 from "../assets/kiptorus.jpg";
 import teamMember19 from "../assets/munzher.jfif";
+import teamMember20 from "../assets/nelson.jpg";
 import defaultAvatar from "../assets/default-avatar.jpg"; 
 
 const TeamMemberCard = ({ name, role, image, bio, category, index }) => {
@@ -44,6 +45,7 @@ const TeamMemberCard = ({ name, role, image, bio, category, index }) => {
   if (image === "james_akali") return teamMember17;
   if (image === "kiptorus") return teamMember18;
   if (image === "munzher") return teamMember19;
+  if (image === "nelson") return teamMember20;
     return defaultAvatar; // Fallback to default avatar
   };
 
