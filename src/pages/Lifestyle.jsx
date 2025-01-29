@@ -24,7 +24,7 @@ const Lifestyle = () => {
             <div className="hero-content text-neutral-content text-center">
               <div>
                 <h1 className="mb-5 text-5xl font-light uppercase">
-                  Lifestyle & Nightlife
+                  Lifestyle
                 </h1>
               </div>
             </div>

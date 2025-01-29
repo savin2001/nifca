@@ -141,7 +141,7 @@ const Footer = () => {
                   to="/lifestyle-nightlife"
                   className="text-neutral hover:text-primary transition"
                 >
-                  Lifestyle & Nightlife
+                  Lifestyle
                 </Link>
               </li>
             </ul>

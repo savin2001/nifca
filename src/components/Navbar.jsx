@@ -132,7 +132,7 @@ const Navbar = () => {
                   <Link to="/tourism">Tourism</Link>
                 </li>
                 <li>
-                  <Link to="/lifestyle-nightlife">Lifestyle & Nightlife</Link>
+                  <Link to="/lifestyle-nightlife">Lifestyle</Link>
                 </li>
               </ul>
             </li>

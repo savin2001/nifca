@@ -1,6 +1,7 @@
 import React from "react";
 import BreadCrumbMenu from "../components/BreadCrumbMenu";
 import { Link } from "react-router-dom";
+import TIL from "../assets/docs/TIL.jpeg"
 
 const Frameworks = () => {
   // Define breadcrumb links
@@ -45,7 +46,6 @@ const Frameworks = () => {
           participants.
         </p>
         <br />
-
         <p className="text-neutral">
           Its progressive legal and regulatory framework is enshrined in Kenyan
           law. NIFC firms will benefit from efficient business facilitation
@@ -139,6 +139,11 @@ const Frameworks = () => {
 
         <br />
 
+        <img
+          src={TIL}
+          alt="Partner 15"
+          className="w-full h-fit object-cover rounded-md m-4"
+        />
         <br />
       </div>
 

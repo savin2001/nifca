@@ -235,6 +235,18 @@ const KeyPartners = () => {
                   Nairobi Securities Exchange
                 </h3>
               </div>
+
+              {/* Partner 15 */}
+              <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjVmF-afR_su5lMToBCtsytnIULC_7xsuJ9A&s"
+                  alt="Partner 15"
+                  className="w-full h-fit object-cover rounded-md mb-4"
+                />
+                <h3 className="text-lg font-semibold mb-2 text-center ">
+                  Nairobi Securities Exchange
+                </h3>
+              </div>
             </div>
           </div>
         </div>
