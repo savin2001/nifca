@@ -57,7 +57,7 @@ function App() {
           <Route path="/why-nairobi" element={<WhyNairobi />} />
           <Route path="/media" element={<Media />} />
           <Route path="/apply" element={<Enquiry />} />
-          <Route path="/press-releases" element={<Articles />} />
+          <Route path="/press-releases" element={<ComingSoon />} />
           <Route path="/article" element={<ComingSoon />} />
           <Route path="/green-finance" element={<GreenFinance />} />
           <Route path="/investment-funds" element={<ComingSoon />} />

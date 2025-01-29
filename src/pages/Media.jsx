@@ -155,10 +155,16 @@ const Media = () => {
             {/* Content Section */}
             <div className="w-2/3 px-12">
               <h2 className="text-xl font-semibold mb-4">{section.title}</h2>
+              <h2 className="text-xl font-semibold mb-4">Coming Soon</h2>
+              <p className="text-neutral mb-4">Page Under Maintenance</p>
+              <p className="text-neutral mb-4">We are currently working on bringing you a comprehensive overview of
+                this page. Stay tuned for updates on how we aim to promote sustainable
+                growth, innovation, and environmental stewardship through tailored
+                financial solutions.</p>
               <p className="text-neutral mb-4">{section.content}</p>
 
               {/* Articles for News, Press Releases, and Events */}
-              {["News", "Events", "Press Releases"].includes(section.title) && (
+              {/* {["News", "Events", "Press Releases"].includes(section.title) && (
                 <div className="space-y-10">
                   {section.articles?.map((article, idx) => (
                     <Link
@@ -183,10 +189,10 @@ const Media = () => {
                     </Link>
                   ))}
                 </div>
-              )}
+              )} */}
 
               {/* Cards for Media Kit and Gallery */}
-              {section.title === "Media Kit" && (
+              {/* {section.title === "Media Kit" && (
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {section.mediaItems?.map((item, idx) => (
                     <div
@@ -209,9 +215,9 @@ const Media = () => {
                     </div>
                   ))}
                 </div>
-              )}
+              )} */}
 
-              {section.title === "Gallery" && (
+              {/* {section.title === "Gallery" && (
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {section.mediaItems?.map((item, idx) => (
                     <div
@@ -234,17 +240,17 @@ const Media = () => {
                     </div>
                   ))}
                 </div>
-              )}
+              )} */}
 
               {/* Button to Section */}
-              <div className="mt-4">
+              {/* <div className="mt-4">
                 <Link
                   to="#"
                   className="text-primary hover:text-neutral hover:underline transition cursor-pointer"
                 >
                   Go to {section.title}
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
