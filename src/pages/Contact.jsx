@@ -23,7 +23,7 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
       e.preventDefault();
-      const mailtoLink = `mailto:osukasavin2001@gmail.com?subject=Enquiry from ${formData.firstName} ${formData.lastName}&body=Email: ${formData.email}%0D%0ACountry: ${formData.country}%0D%0ATelephone: ${formData.telephone}%0D%0ACompany: ${formData.company}%0D%0AMessage: ${formData.message}`;
+      const mailtoLink = `mailto:info@nifca.go.ke?subject=Enquiry from ${formData.firstName} ${formData.lastName}&body=Email: ${formData.email}%0D%0ACountry: ${formData.country}%0D%0ATelephone: ${formData.telephone}%0D%0ACompany: ${formData.company}%0D%0AMessage: ${formData.message}`;
       window.location.href = mailtoLink;
     };
 
