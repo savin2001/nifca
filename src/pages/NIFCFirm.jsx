@@ -124,9 +124,9 @@ const NIFCFirm = () => {
                             <h2 className="text-3xl font-semibold mb-4">{section.title}</h2>
                             <p className="text-neutral mb-4">{section.description.split("\n")[0]}</p>
                             <p className="text-neutral mb-6">{section.description.split("\n")[1]}</p>
-                            <a href={section.exploreLink} className="btn btn-primary w-40">
+                            <Link to={section.exploreLink} className="btn btn-primary w-40">
                                 Find out more
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 ))}
