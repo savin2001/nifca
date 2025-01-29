@@ -26,7 +26,7 @@ const FloatingSocialButton = () => {
           onClick={toggleMenu}
           className="bg-primary text-white p-4 rounded-full shadow-lg focus:outline-none transition-transform transform hover:scale-110 text-xl transition-all duration-300 ease-in-out"
         >
-          {!isOpen ? <FaFacebookF className="swap-off" /> : "-"}
+          {!isOpen ? <FaWhatsapp className="swap-off" /> : "-"}
         </button>
       </div>
 

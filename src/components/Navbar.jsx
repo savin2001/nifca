@@ -103,10 +103,10 @@ const Navbar = () => {
               </ul>
             </li>
 
-            {/* Why Choose Nairobi Dropdown */}
+            {/* Why Nairobi Dropdown */}
             <li className="dropdown dropdown-hover">
               <div tabIndex={0} role="button" className="btn btn-ghost">
-                Why Choose Nairobi
+                Why Nairobi
               </div>
               <ul
                 tabIndex={0}

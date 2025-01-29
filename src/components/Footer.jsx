@@ -93,7 +93,7 @@ const Footer = () => {
           {/* Column 3: Why Nairobi */}
           <div>
             <h3 className="font-light uppercase text-lg mb-4 text-primary">
-              Why Choose Nairobi
+              Why Nairobi
             </h3>
             <ul className="space-y-2">
               <li>

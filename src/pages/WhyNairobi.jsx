@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const WhyNairobi = () => {
   // Define breadcrumb links
-  const breadcrumbLinks = [{ to: "/why-nairobi", label: "Why Choose Nairobi" }];
+  const breadcrumbLinks = [{ to: "/why-nairobi", label: "Why Nairobi" }];
 
   // Define sub-pages for navigation
   const subPages = [
