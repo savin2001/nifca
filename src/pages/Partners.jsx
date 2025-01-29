@@ -1,6 +1,22 @@
 import React from "react";
 import BreadCrumbMenu from "../components/BreadCrumbMenu";
 import { Link } from "react-router-dom";
+import BRS from "../assets/partners/BRS.jpeg"
+import IRA from "../assets/partners/insurance.jpeg"
+import CBK from "../assets/partners/CBK.jpeg"
+import CMA from "../assets/partners/CMA.jpeg"
+import Immigration from "../assets/partners/Immigration.jpeg"
+import KRA from "../assets/partners/KRA.jpeg"
+import UNDP from "../assets/partners/UNDP.jpeg"
+import FC4S from "../assets/partners/FC4S.jpeg"
+import Treasury from "../assets/partners/Treasury.jpeg"
+import CityUK from "../assets/partners/CityUK.jpeg"
+import KAM from "../assets/partners/KAM.jpeg"
+import NSE from "../assets/partners/NSE.jpeg"
+import RBA from "../assets/partners/RBA.jpg"
+import FCDO from "../assets/partners/FCDO.png"
+// import BRS from "../assets/partners/BRS.jpeg"
+// import BRS from "../assets/partners/BRS.jpeg"
 
 const KeyPartners = () => {
   // Define breadcrumb links
@@ -55,7 +71,7 @@ const KeyPartners = () => {
               {/* Partner 1 */}
               <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+                  src={IRA}
                   alt="Partner 1"
                   className="w-full h-fit object-cover rounded-md mb-4"
                 />
@@ -67,7 +83,7 @@ const KeyPartners = () => {
               {/* Partner 2 */}
               <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+                  src={RBA}
                   alt="Partner 2"
                   className="w-full h-fit object-cover rounded-md mb-4"
                 />
@@ -79,7 +95,7 @@ const KeyPartners = () => {
               {/* Partner 3 */}
               <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+                  src={CBK}
                   alt="Partner 3"
                   className="w-full h-fit object-cover rounded-md mb-4"
                 />
@@ -91,7 +107,7 @@ const KeyPartners = () => {
               {/* Partner 4 */}
               <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+                  src={CMA}
                   alt="Partner 4"
                   className="w-full h-fit object-cover rounded-md mb-4"
                 />
@@ -103,7 +119,7 @@ const KeyPartners = () => {
               {/* Partner 5 */}
               <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+                  src={Immigration}
                   alt="Partner 5"
                   className="w-full h-fit object-cover rounded-md mb-4"
                 />
@@ -115,7 +131,7 @@ const KeyPartners = () => {
               {/* Partner 6 */}
               <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+                  src={KRA}
                   alt="Partner 6"
                   className="w-full h-fit object-cover rounded-md mb-4"
                 />
@@ -127,7 +143,7 @@ const KeyPartners = () => {
               {/* Partner 7 */}
               <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+                  src={BRS}
                   alt="Partner 7"
                   className="w-full h-fit object-cover rounded-md mb-4"
                 />
@@ -139,7 +155,7 @@ const KeyPartners = () => {
               {/* Partner 8 */}
               <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+                  src={UNDP}
                   alt="Partner 8"
                   className="w-full h-fit object-cover rounded-md mb-4"
                 />
@@ -151,7 +167,7 @@ const KeyPartners = () => {
               {/* Partner 9 */}
               <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+                  src={FC4S}
                   alt="Partner 9"
                   className="w-full h-fit object-cover rounded-md mb-4"
                 />
@@ -163,7 +179,7 @@ const KeyPartners = () => {
               {/* Partner 10 */}
               <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+                  src={FCDO}
                   alt="Partner 10"
                   className="w-full h-fit object-cover rounded-md mb-4"
                 />
@@ -175,7 +191,7 @@ const KeyPartners = () => {
               {/* Partner 11 */}
               <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+                  src={Treasury}
                   alt="Partner 11"
                   className="w-full h-fit object-cover rounded-md mb-4"
                 />
@@ -187,7 +203,7 @@ const KeyPartners = () => {
               {/* Partner 12 */}
               <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+                  src={CityUK}
                   alt="Partner 12"
                   className="w-full h-fit object-cover rounded-md mb-4"
                 />
@@ -199,7 +215,7 @@ const KeyPartners = () => {
               {/* Partner 13 */}
               <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+                  src={KAM}
                   alt="Partner 13"
                   className="w-full h-fit object-cover rounded-md mb-4"
                 />
@@ -211,7 +227,7 @@ const KeyPartners = () => {
               {/* Partner 14 */}
               <div className="card bg-base-100 hover:shadow-md rounded-none p-6 hover:bg-base-200 transition duration-300">
                 <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg"
+                  src={NSE}
                   alt="Partner 14"
                   className="w-full h-fit object-cover rounded-md mb-4"
                 />
