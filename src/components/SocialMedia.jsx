@@ -58,7 +58,7 @@ const FloatingSocialButton = () => {
             <FaInstagram />
           </Link>
           <Link
-            to="#"
+            to="https://wa.me/+254792000555"
             className="text-neutral hover:text-primary transition text-2xl"
           >
             <FaWhatsapp />
