@@ -8,15 +8,6 @@ const Home = () => {
     <>
       <Hero />
 
-      {/* Section 2: The Tagline */}
-      <div className="h-1/4 flex flex-col items-center bg-base-200">
-        <div className="w-full max-w-screen-lg text-center py-16">
-          <h2 className="text-2xl md:text-4xl font-meium capitalize text-neutral ">
-            Potential CTA's Get Certified, Invest
-          </h2>
-        </div>
-      </div>
-
       {/* Section 3: The NIFC Offering */}
       <div className="h-fit flex flex-col items-center bg-base-100 mb-14">
         <div className="w-full max-w-screen-lg text-center py-16">
@@ -66,7 +57,7 @@ const Home = () => {
               </div>
               <h3 className="text-lg font-semibold mb-4">Strategic Location</h3>
               <p className="text-neutral">
-                PPositioned as a gateway to Africa, connecting businesses to
+                Positioned as a gateway to Africa, connecting businesses to
                 global opportunities.
               </p>
             </div>

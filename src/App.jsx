@@ -58,7 +58,7 @@ function App() {
           <Route path="/media" element={<Media />} />
           <Route path="/apply" element={<Enquiry />} />
           <Route path="/press-releases" element={<Articles />} />
-          <Route path="/article" element={<Article />} />
+          <Route path="/article" element={<ComingSoon />} />
           <Route path="/green-finance" element={<GreenFinance />} />
           <Route path="/investment-funds" element={<ComingSoon />} />
           <Route path="/fintech" element={<ComingSoon />} />
