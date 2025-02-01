@@ -31,7 +31,7 @@ const Navbar = () => {
               className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
             >
               <li>
-                <Link to="/about">What is NIFC</Link>
+                <Link to="/discover-nifc">What is NIFC</Link>
               </li>
               <li>
                 <Link to="/frameworks">Framework</Link>
