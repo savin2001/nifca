@@ -60,7 +60,7 @@ const Team = () => {
       image: "c_macharia",
     },
     {
-      name: "Michael Kamiru Kamau",
+      name: "Michael Kamiru ",
       role: "Chairperson of the Board of Directors, NIFC",
       bio: "Chairperson of the Board of Directors, NIFC",
       image: "michael_kamiru",
@@ -69,7 +69,7 @@ const Team = () => {
 
   const boardMembers = [
     {
-      name: "Michael Kamiru Kamau",
+      name: "Michael Kamiru ",
       role: "Chairperson, NIFC",
       bio: "",
       image: "michael_kamiru",
@@ -121,6 +121,12 @@ const Team = () => {
       role: "Director",
       bio: "",
       image: "kiptorus",
+    },
+    {
+      name: "Symon Chelelgo",
+      role: "Director",
+      bio: "",
+      image: "chelelgo",
     },
   ];
 

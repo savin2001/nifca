@@ -18,6 +18,7 @@ import teamMember17 from "../assets/james_akali.jpg";
 import teamMember18 from "../assets/kiptorus.jpg";
 import teamMember19 from "../assets/munzher.jfif";
 import teamMember20 from "../assets/nelson.jpg";
+import teamMember21 from "../assets/chelelgo.jpeg";
 import defaultAvatar from "../assets/default-avatar.jpg"; 
 
 const TeamMemberCard = ({ name, role, image, bio, category, index }) => {
@@ -46,6 +47,7 @@ const TeamMemberCard = ({ name, role, image, bio, category, index }) => {
   if (image === "kiptorus") return teamMember18;
   if (image === "munzher") return teamMember19;
   if (image === "nelson") return teamMember20;
+  if (image === "chelelgo") return teamMember21;
     return defaultAvatar; // Fallback to default avatar
   };
 
@@ -58,7 +60,7 @@ const TeamMemberCard = ({ name, role, image, bio, category, index }) => {
         <img
           src={getImage()}
           alt={name}
-          className="w-full h-80 object-cover rounded-md mb-4"
+          className="w-full max-w-md h-96 object-cover rounded-md mb-4"
         />
         <h3 className="text-lg font-semibold mb-2 text-center">{name}</h3>
         <p className="text-neutral text-center">{role}</p>
