@@ -12,7 +12,7 @@ const TeamSection = ({ category, members }) => {
         {category === "Steering Council" && (
           <>
             {/* President & Deputy President */}
-            <div className="flex flex-col md:flex-row justify-center items-center gap-6 mb-8">
+            <div className="flex flex-col md:flex-col justify-center items-center gap-6 mb-8">
               {president && (
                 <TeamMemberCard
                   name={president.name}

@@ -45,7 +45,7 @@ const TeamMemberCard = ({ name, role, image, bio, category, index }) => {
   if (image === "michael_maina") return teamMember16;
   if (image === "james_akali") return teamMember17;
   if (image === "kiptorus") return teamMember18;
-  if (image === "munzher") return teamMember19;
+  // if (image === "munzher") return teamMember19;
   if (image === "nelson") return teamMember20;
   if (image === "chelelgo") return teamMember21;
     return defaultAvatar; // Fallback to default avatar
