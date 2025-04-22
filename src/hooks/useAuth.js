@@ -57,21 +57,16 @@ const useAuth = (endpoint = "http://localhost:3000/api/auth/login") => {
     }
 
     try {
-      const res = await axios.post(
+      await axios.post(
         "http://localhost:3000/api/auth/change-password",
         { oldPassword, newPassword },
         { headers: { Authorization: `Bearer ${tempToken}` } }
       );
 
-      const { token } = res.data;
-      const decoded = jwtDecode(token);
-      console.log(decoded);
-      localStorage.setItem("token", token);
+      // Clear temp token and redirect to login
       localStorage.removeItem("tempToken");
-      setToken(token);
-      setUser(decoded);
+      navigate("/login");
 
-      navigate("/dashboard");
       return { success: true };
     } catch (err) {
       setError(err.response?.data?.error || "Password change failed");
