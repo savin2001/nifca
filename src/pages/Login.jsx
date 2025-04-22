@@ -13,8 +13,17 @@ const LoginPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const { success } = await login({ email, password });
-    if (success) {
+    const result = await login({ email, password });
+
+    if (result.forcePasswordChange) {
+      // Save the token temporarily for password change
+      localStorage.setItem("tempToken", result.token);
+      alert(result.message || "You must change your password first.");
+      navigate("/change-password");
+      return;
+    }
+
+    if (result.success) {
       navigate("/dashboard");
     }
   };

@@ -43,6 +43,8 @@ import ComingSoon from "./pages/ComingSoon";
 import Careers from "./pages/Careers";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
+import RegisterAdmin from "./pages/RegisterAdmin";
+import ChangePasswordPage from "./pages/ChangePasswordPage";
 
 function App() {
   return (
@@ -388,12 +390,23 @@ function App() {
 
         {/* Auth & Admin - outside MainLayout */}
         <Route path="/login" element={<Login />} />
+        <Route path="/change-password" element={<ChangePasswordPage />} />
         <Route
           path="/dashboard"
           element={
             <PrivateRoute>
               <AdminLayout>
                 <Dashboard />
+              </AdminLayout>
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/register-admin"
+          element={
+            <PrivateRoute>
+              <AdminLayout>
+                <RegisterAdmin />
               </AdminLayout>
             </PrivateRoute>
           }

@@ -11,7 +11,7 @@ const AdminNavbar = () => {
         <Link to="/dashboard" className="text-xl font-bold">Admin Panel</Link>
         <div className="flex gap-4">
           <Link to="/dashboard" className="btn btn-ghost">Dashboard</Link>
-          <Link to="/users" className="btn btn-ghost">Users</Link>
+          <Link to="/register-admin" className="btn btn-ghost">New Admin</Link>
           <button onClick={logout} className="btn btn-error btn-sm">Logout</button>
         </div>
       </div>
