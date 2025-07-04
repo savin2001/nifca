@@ -18,7 +18,7 @@ import teamMember17 from "../assets/james_akali.jpg";
 import teamMember18 from "../assets/kiptorus.jpg";
 import teamMember19 from "../assets/munzher.jfif";
 import teamMember20 from "../assets/nelson.jpg";
-import teamMember21 from "../assets/chelelgo.jpeg";
+import teamMember21 from "../assets/chelelgo.jpg";
 import defaultAvatar from "../assets/default-avatar.jpg"; 
 
 const TeamMemberCard = ({ name, role, image, bio, category, index }) => {
