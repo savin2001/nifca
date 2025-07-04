@@ -147,6 +147,69 @@ const Frameworks = () => {
         <br />
       </div>
 
+      {/* Added 2025/2026 Finance Bill */}
+      <div className="max-w-screen-lg mx-auto text-left flex flex-col mt-12">
+        <h2 className="text-primary text-2xl mt-4 font-semibold">
+          In the 2025/2026 Finance Bill, the NIFC was granted the following incentives:
+        </h2>
+        <br />
+        <ol className="menu bg-base-200 rounded-box w-full hover:cursor-none disabled pb-8">
+          <li>
+            <h2 className="text-neutral text-lg mt-2 font-semibold">
+              1. Preferential Corporate Tax Rates for Certified NIFC Companies - Proposed Amendment to the Third Schedule of the Income Tax Act:
+            </h2>
+            <p className="text-neutral mt-2 font-semibold">
+              For Category A NIFC-Certified Firms:
+              <br />              
+            </p>
+            <ul >
+                <li>15% corporate tax rate for the first 10 years from commencement of operations.</li>
+                <br />
+                <li>20% corporate tax rate for the next 10 years.</li>
+              </ul>
+            <p className="text-neutral mt-2 font-semibold">
+              Conditions:
+            </p>
+            <p className="text-neutral">
+              • The company must invest at least KES 3 billion in Kenya within the first three years of operation.
+              <br />
+              • If a holding company, at least 70% of senior management must be Kenyan citizens.
+              <br />
+              • If a regional headquarters, at least 60% of senior management must be Kenyan citizens.
+            </p>
+          </li>
+          <li>
+            <h2 className="text-neutral text-lg mt-2 font-semibold">
+              2. Dividend Tax Exemption for Certified NIFC Companies - Proposed Amendment to Paragraph 75 of the First Schedule of the Income Tax Act
+            </h2>
+            <ul >
+                <li>Exemption from withholding tax on dividends paid by a company certified by the NIFC Authority.</li>
+              </ul>
+            <p className="text-neutral mt-2 font-semibold">
+              Conditions:
+            </p>
+            <p className="text-neutral">
+              • The company must reinvest at least KES 250 million in Kenya within the same year of income in which the dividends are paid.
+            </p>
+          </li>
+          <li>
+            <h2 className="text-neutral text-lg mt-2 font-semibold">
+              3. Preferential Corporate Tax Rates for Certified NIFC Start-Ups - Proposed Amendment to the Third Schedule of the Income Tax Act
+            </h2>
+            <p className="text-neutral mt-2 font-semibold">
+              For Category B NIFC-Certified Firms:
+              <br />              
+            </p>
+            <ul >
+                <li>15% corporate tax rate for the first 3 years.</li>
+                <br />
+                <li>20% corporate tax rate for the next 4 years.</li>
+              </ul>
+          </li>
+        </ol>
+        <br />
+      </div>
+
       {/* Section 3 */}
       <div className="mt-12 flex flex-col justify-center items-center font-light">
         <div className="bg-base-300 w-full  p-12 flex justify-between space-x-8">
