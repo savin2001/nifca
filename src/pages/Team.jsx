@@ -123,7 +123,7 @@ const Team = () => {
       image: "kiptorus",
     },
     {
-      name: "Symon Chelelgo",
+      name: "Symon Chelelgo, HSC",
       role: "Director",
       bio: "",
       image: "chelelgo",
