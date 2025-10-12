@@ -2,7 +2,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-const useAdminAuth = (endpoint = "http://localhost:3000/api/auth/register") => {
+const useAdminAuth = (endpoint = `${import.meta.env.VITE_BASE_URL}/api/auth/register`) => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
     const [data, setData] = useState(null);

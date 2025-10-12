@@ -3,7 +3,7 @@ import axios from "axios";
 import { jwtDecode } from "jwt-decode";
 import { useNavigate } from "react-router-dom";
 
-const useAuth = (endpoint = "http://localhost:3000/api/auth/login") => {
+const useAuth = (endpoint = `${import.meta.env.VITE_BASE_URL}/api/auth/login`) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [token, setToken] = useState(() => localStorage.getItem("token"));
@@ -58,7 +58,7 @@ const useAuth = (endpoint = "http://localhost:3000/api/auth/login") => {
 
     try {
       await axios.post(
-        "http://localhost:3000/api/auth/change-password",
+        `${import.meta.env.VITE_BASE_URL}/api/auth/change-password`,
         { oldPassword, newPassword },
         { headers: { Authorization: `Bearer ${tempToken}` } }
       );
