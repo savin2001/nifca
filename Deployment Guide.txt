@@ -1,4 +1,9 @@
 NIFCA Project Deployment Guide
+Can we account for the fixed navbar which is cutting of 
+the information at the top of the detailed view pages of 
+the artefacts?\
+I want the breadcrumb to start hyst after it so it is 
+visible like the cards pages 
 
 Prerequisites
 Ensure you have the following installed on your system:

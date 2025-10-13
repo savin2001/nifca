@@ -4,6 +4,7 @@ import "./App.css";
 import MainLayout from "./layout/MainLayout";
 import AdminLayout from "./layout/AdminLayout";
 import PrivateRoute from "./components/PrivateRoute";
+import RoleBasedRoute from "./components/RoleBasedRoute";
 
 // Pages
 import Home from "./pages/Home";
@@ -45,6 +46,18 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import RegisterAdmin from "./pages/RegisterAdmin";
 import ChangePasswordPage from "./pages/ChangePasswordPage";
+import ContentAdmin from "./pages/content/ContentAdmin";
+import News from "./pages/content/News";
+import PressReleases from "./pages/content/PressReleases";
+import PressReleasesPublic from "./pages/PressReleasesPublic";
+import GalleryPublic from "./pages/GalleryPublic";
+import NewsPublic from "./pages/NewsPublic";
+import NewsArticle from "./pages/NewsArticle";
+import EventArticle from "./pages/EventArticle";
+import PressReleaseArticle from "./pages/PressReleaseArticle";
+import GalleryItemDetail from "./pages/GalleryItemDetail";
+import MediaAdmin from "./pages/content/Media";
+import EventsAdmin from "./pages/content/Events";
 
 function App() {
   return (
@@ -92,6 +105,14 @@ function App() {
           }
         />
         <Route
+          path="/events/:id"
+          element={
+            <MainLayout>
+              <EventArticle />
+            </MainLayout>
+          }
+        />
+        <Route
           path="/laws"
           element={
             <MainLayout>
@@ -132,10 +153,50 @@ function App() {
           }
         />
         <Route
+          path="/news"
+          element={
+            <MainLayout>
+              <NewsPublic />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/news/:id"
+          element={
+            <MainLayout>
+              <NewsArticle />
+            </MainLayout>
+          }
+        />
+        <Route
           path="/press-releases"
           element={
             <MainLayout>
-              <ComingSoon />
+              <PressReleasesPublic />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/press-releases/:id"
+          element={
+            <MainLayout>
+              <PressReleaseArticle />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/gallery"
+          element={
+            <MainLayout>
+              <GalleryPublic />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/gallery/:id"
+          element={
+            <MainLayout>
+              <GalleryItemDetail />
             </MainLayout>
           }
         />
@@ -389,7 +450,14 @@ function App() {
         />
 
         {/* Auth & Admin - outside MainLayout */}
-        <Route path="/login" element={<Login />} />
+        <Route
+          path="/login"
+          element={
+            <MainLayout>
+              <Login />
+            </MainLayout>
+          }
+        />
         <Route path="/change-password" element={<ChangePasswordPage />} />
         <Route
           path="/dashboard"
@@ -409,6 +477,56 @@ function App() {
                 <RegisterAdmin />
               </AdminLayout>
             </PrivateRoute>
+          }
+        />
+        <Route
+          path="/admin/content"
+          element={
+            <RoleBasedRoute allowedRoles={[2]}>
+              <AdminLayout>
+                <ContentAdmin />
+              </AdminLayout>
+            </RoleBasedRoute>
+          }
+        />
+        <Route
+          path="/admin/content/events"
+          element={
+            <RoleBasedRoute allowedRoles={[2]}>
+              <AdminLayout>
+                <EventsAdmin />
+              </AdminLayout>
+            </RoleBasedRoute>
+          }
+        />
+        <Route
+          path="/admin/content/news"
+          element={
+            <RoleBasedRoute allowedRoles={[2]}>
+              <AdminLayout>
+                <News />
+              </AdminLayout>
+            </RoleBasedRoute>
+          }
+        />
+        <Route
+          path="/admin/content/press-releases"
+          element={
+            <RoleBasedRoute allowedRoles={[2]}>
+              <AdminLayout>
+                <PressReleases />
+              </AdminLayout>
+            </RoleBasedRoute>
+          }
+        />
+        <Route
+          path="/admin/content/media"
+          element={
+            <RoleBasedRoute allowedRoles={[2]}>
+              <AdminLayout>
+                <MediaAdmin />
+              </AdminLayout>
+            </RoleBasedRoute>
           }
         />
       </Routes>

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 import BreadCrumbMenu from "../components/BreadCrumbMenu";
 
-const LoginPage = () => {
+const Login = () => {
   const navigate = useNavigate();
   const { login, error, loading } = useAuth();
   const [email, setEmail] = useState("");
@@ -118,4 +118,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default Login;
