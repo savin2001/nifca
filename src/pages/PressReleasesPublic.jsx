@@ -1,31 +1,32 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import BreadCrumbMenu from "../components/BreadCrumbMenu";
-import useEvents from "../hooks/useEvents";
+import { Link } from "react-router-dom";
+import usePressReleases from "../hooks/usePressReleases";
 
-const Events = () => {
+const PressReleasesPublic = () => {
   const [page, setPage] = useState(1);
   const [limit] = useState(6);
-  const { events, pagination, loading, error } = useEvents(page, limit);
+  const { pressReleases, pagination, loading, error } = usePressReleases(page, limit);
 
   // Define breadcrumb links
   const breadcrumbLinks = [
     { to: "/media", label: "News and Media" },
-    { to: "/events", label: "Events" },
+    { to: "/press-releases", label: "Press Releases" },
   ];
 
-  // Helper function to truncate text
-  const truncateText = (text, maxLength = 150) => {
-    if (!text) return '';
-    if (text.length <= maxLength) return text;
-    return text.substring(0, maxLength) + '...';
+  // Helper function to truncate content
+  const truncateContent = (content, maxLength = 150) => {
+    if (!content) return '';
+    if (content.length <= maxLength) return content;
+    return content.substring(0, maxLength) + "...";
   };
 
   return (
     <div className="">
-      <div className="relative">
-        {/* Hero Section */}
+      <div className="relative ">
+        {/* Hero Carousel */}
         <div className="carousel w-full h-1/2">
+          {/* Slide 1 */}
           <div id="slide1" className="carousel-item relative w-full">
             <div
               className="hero h-[70vh]"
@@ -38,9 +39,9 @@ const Events = () => {
               <div className="hero-content text-neutral-content text-center">
                 <div>
                   <h1 className="mb-5 text-5xl font-light uppercase">
-                    Upcoming Events
+                    Press Releases
                   </h1>
-                  <p className="text-lg">Join us at our upcoming events and conferences</p>
+                  <p className="text-lg">Official statements and announcements from NIFCA</p>
                 </div>
               </div>
             </div>
@@ -49,7 +50,7 @@ const Events = () => {
         <BreadCrumbMenu links={breadcrumbLinks} />
       </div>
 
-      {/* Events Section */}
+      {/* Press Releases Section */}
       <div className="max-w-screen-xl mx-auto px-4 py-20">
         {loading ? (
           <div className="flex justify-center items-center py-20">
@@ -57,52 +58,28 @@ const Events = () => {
           </div>
         ) : error ? (
           <div className="alert alert-error">
-            <span>Error loading events: {error.message}</span>
+            <span>Error loading press releases: {error.message}</span>
           </div>
-        ) : events && events.length > 0 ? (
+        ) : pressReleases && pressReleases.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {events.map((item) => (
+            {pressReleases.map((release) => (
               <div
-                key={item.id}
+                key={release.id}
                 className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300"
               >
-                {item.picture && (
-                  <figure className="px-0 pt-0 h-64">
-                    <img
-                      src={`${import.meta.env.VITE_BASE_URL}${item.picture}`}
-                      alt={item.title}
-                      className="w-full h-full object-cover rounded-t-2xl"
-                      onError={(e) => {
-                        e.target.src = 'https://via.placeholder.com/400x300?text=Image+Not+Available';
-                      }}
-                    />
-                  </figure>
-                )}
                 <div className="card-body">
-                  <div className="flex items-center gap-2 text-sm text-neutral opacity-60 mb-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                    {new Date(item.event_start_date || item.date || item.created_at).toLocaleDateString('en-US', {
+                  <p className="text-sm text-neutral opacity-60">
+                    {new Date(release.created_at).toLocaleDateString('en-US', {
                       day: 'numeric',
                       month: 'short',
                       year: 'numeric'
                     })}
-                  </div>
-                  <h2 className="card-title text-xl font-bold">{item.title}</h2>
-                  <p className="text-neutral">{truncateText(item.description || item.content, 150)}</p>
-                  {item.location && (
-                    <div className="flex items-center gap-2 text-sm text-neutral opacity-60 mt-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                      {item.location}
-                    </div>
-                  )}
+                  </p>
+                  <h2 className="card-title text-xl font-bold">{release.title}</h2>
+                  <p className="text-neutral">{truncateContent(release.content, 150)}</p>
                   <div className="card-actions justify-end mt-4">
-                    <Link to={`/events/${item.id}`} className="btn btn-primary btn-sm">
-                      View Details
+                    <Link to={`/press-releases/${release.id}`} className="btn btn-primary btn-sm">
+                      Read More
                     </Link>
                   </div>
                 </div>
@@ -111,7 +88,7 @@ const Events = () => {
           </div>
         ) : (
           <div className="text-center py-20">
-            <p className="text-neutral text-lg">No upcoming events at this time.</p>
+            <p className="text-neutral text-lg">No press releases available at this time.</p>
           </div>
         )}
 
@@ -144,4 +121,4 @@ const Events = () => {
   );
 };
 
-export default Events;
+export default PressReleasesPublic;

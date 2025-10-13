@@ -49,6 +49,13 @@ import ChangePasswordPage from "./pages/ChangePasswordPage";
 import ContentAdmin from "./pages/content/ContentAdmin";
 import News from "./pages/content/News";
 import PressReleases from "./pages/content/PressReleases";
+import PressReleasesPublic from "./pages/PressReleasesPublic";
+import GalleryPublic from "./pages/GalleryPublic";
+import NewsPublic from "./pages/NewsPublic";
+import NewsArticle from "./pages/NewsArticle";
+import EventArticle from "./pages/EventArticle";
+import PressReleaseArticle from "./pages/PressReleaseArticle";
+import GalleryItemDetail from "./pages/GalleryItemDetail";
 import MediaAdmin from "./pages/content/Media";
 import EventsAdmin from "./pages/content/Events";
 
@@ -98,6 +105,14 @@ function App() {
           }
         />
         <Route
+          path="/events/:id"
+          element={
+            <MainLayout>
+              <EventArticle />
+            </MainLayout>
+          }
+        />
+        <Route
           path="/laws"
           element={
             <MainLayout>
@@ -138,10 +153,50 @@ function App() {
           }
         />
         <Route
+          path="/news"
+          element={
+            <MainLayout>
+              <NewsPublic />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/news/:id"
+          element={
+            <MainLayout>
+              <NewsArticle />
+            </MainLayout>
+          }
+        />
+        <Route
           path="/press-releases"
           element={
             <MainLayout>
-              <ComingSoon />
+              <PressReleasesPublic />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/press-releases/:id"
+          element={
+            <MainLayout>
+              <PressReleaseArticle />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/gallery"
+          element={
+            <MainLayout>
+              <GalleryPublic />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/gallery/:id"
+          element={
+            <MainLayout>
+              <GalleryItemDetail />
             </MainLayout>
           }
         />
