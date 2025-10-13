@@ -57,9 +57,9 @@ const PressReleaseArticle = () => {
 
   return (
     <div className="flex min-h-screen w-full flex-col bg-base-100">
-      <main className="flex-1">
+      <main className="flex-1 pt-32">
         {/* Breadcrumb - Above Content */}
-        <div className="mx-auto max-w-4xl px-4 py-4 sm:py-6 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl px-4 py-6 sm:py-8 sm:px-6 lg:px-8">
           <div className="text-sm font-medium">
             <Link to="/media" className="text-primary hover:underline transition-colors">
               News & Media

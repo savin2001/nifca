@@ -28,25 +28,113 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+              className="dropdown-content menu bg-base-100 rounded-box z-[1] w-64 p-2 shadow"
             >
+              {/* Discover NIFC Collapse */}
               <li>
-                <Link to="/discover-nifc">What is NIFC</Link>
+                <details className="collapse collapse-arrow">
+                  <summary className="collapse-title text-sm font-semibold min-h-0 p-2">
+                    Discover NIFC
+                  </summary>
+                  <div className="collapse-content p-0">
+                    <ul className="menu">
+                      <li>
+                        <Link to="/discover-nifc">What is NIFC</Link>
+                      </li>
+                      <li>
+                        <Link to="/frameworks">Framework</Link>
+                      </li>
+                      <li>
+                        <Link to="/our-team">Our Team</Link>
+                      </li>
+                      <li>
+                        <Link to="/partners">Key Partners</Link>
+                      </li>
+                      <li>
+                        <Link to="/laws">Laws & Regulation</Link>
+                      </li>
+                      <li>
+                        <Link to="/company-ledger">Company Ledger</Link>
+                      </li>
+                      <li>
+                        <Link to="/careers">Careers</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+
+              {/* Why Nairobi Collapse */}
+              <li>
+                <details className="collapse collapse-arrow">
+                  <summary className="collapse-title text-sm font-semibold min-h-0 p-2">
+                    Why Nairobi
+                  </summary>
+                  <div className="collapse-content p-0">
+                    <ul className="menu">
+                      <li>
+                        <Link to="/why-nairobi">Why Nairobi</Link>
+                      </li>
+                      <li>
+                        <Link to="/global-financial-gateway">Global Financial Gateway</Link>
+                      </li>
+                      <li>
+                        <Link to="/strength-in-financial-services">Strength in Financial Services</Link>
+                      </li>
+                      <li>
+                        <Link to="/sustainability">Sustainability</Link>
+                      </li>
+                      <li>
+                        <Link to="/tourism">Tourism</Link>
+                      </li>
+                      <li>
+                        <Link to="/lifestyle-nightlife">Lifestyle</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+
+              {/* Join the NIFC Collapse */}
+              <li>
+                <details className="collapse collapse-arrow">
+                  <summary className="collapse-title text-sm font-semibold min-h-0 p-2">
+                    Join the NIFC
+                  </summary>
+                  <div className="collapse-content p-0">
+                    <ul className="menu">
+                      <li>
+                        <Link to="/becoming-nifc-firm">Becoming an NIFC Firm</Link>
+                      </li>
+                      <li>
+                        <Link to="/start-application">Start Your Application</Link>
+                      </li>
+                      <li>
+                        <Link to="/one-stop-shop">NIFC One Stop Shop</Link>
+                      </li>
+                      <li>
+                        <Link to="/immigration-support">Immigration Support</Link>
+                      </li>
+                      <li>
+                        <Link to="/business-support">Business Support</Link>
+                      </li>
+                      <li>
+                        <Link to="/sdg-pipeline-builder">SDG Pipeline Builder</Link>
+                      </li>
+                      <li>
+                        <Link to="/tech-accelerator">NIFC Tech Accelerator</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+
+              {/* Direct Links */}
+              <li>
+                <Link to="/innovations">Innovation</Link>
               </li>
               <li>
-                <Link to="/frameworks">Framework</Link>
-              </li>
-              <li>
-                <Link to="/our-team">Our Team</Link>
-              </li>
-              <li>
-                <Link to="/partners">Key Partners</Link>
-              </li>
-              <li>
-                <Link to="/laws">Laws & Regulation</Link>
-              </li>
-              <li>
-                <Link to="/company-ledger">Company Ledger</Link>
+                <Link to="/media">News & Media</Link>
               </li>
             </ul>
           </div>

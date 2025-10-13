@@ -86,37 +86,21 @@ const EventArticle = () => {
 
   return (
     <div className="flex min-h-screen w-full flex-col bg-base-100">
-      <main className="flex-1 px-4 py-6 sm:py-8 sm:px-6 lg:px-8">
+      <main className="flex-1 px-4 sm:px-6 lg:px-8 pt-32">
         <div className="max-w-6xl mx-auto">
           {/* Breadcrumb */}
-          <div className="mb-6 sm:mb-8">
-            <nav aria-label="Breadcrumb" className="flex items-center text-sm">
-              <ol className="flex items-center space-x-1 sm:space-x-2">
-                <li>
-                  <Link to="/media" className="hover:text-primary transition-colors">
-                    News & Media
-                  </Link>
-                </li>
-                <li>
-                  <svg aria-hidden="true" className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0 text-neutral/40" fill="currentColor" viewBox="0 0 20 20">
-                    <path clipRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" fillRule="evenodd"></path>
-                  </svg>
-                </li>
-                <li>
-                  <Link to="/events" className="hover:text-primary transition-colors">
-                    Events
-                  </Link>
-                </li>
-                <li>
-                  <svg aria-hidden="true" className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0 text-neutral/40" fill="currentColor" viewBox="0 0 20 20">
-                    <path clipRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" fillRule="evenodd"></path>
-                  </svg>
-                </li>
-                <li>
-                  <span className="text-neutral/60 truncate max-w-[150px] sm:max-w-none">Event Details</span>
-                </li>
-              </ol>
-            </nav>
+          <div className="mb-6 sm:mb-8 pt-6">
+            <div className="flex items-center gap-2 text-sm font-medium">
+              <Link to="/media" className="text-primary hover:underline transition-colors">
+                News & Media
+              </Link>
+              <span className="text-neutral/40">/</span>
+              <Link to="/events" className="text-primary hover:underline transition-colors">
+                Events
+              </Link>
+              <span className="text-neutral/40">/</span>
+              <span className="text-neutral/60">Event Details</span>
+            </div>
           </div>
 
           {/* Event Card */}

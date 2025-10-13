@@ -2,8 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom"; // Import Link
 import Hero from "../components/Hero";
 import HomePageCarousel from "../components/HomePageCarousel";
+import useNews from "../hooks/useNews";
 
 const Home = () => {
+  // Fetch the latest 3 news articles
+  const { news, loading, error } = useNews(1, 3);
+
+  // Helper function to truncate text
+  const truncateText = (text, maxLength = 150) => {
+    if (!text) return '';
+    if (text.length <= maxLength) return text;
+    return text.substring(0, maxLength) + '...';
+  };
+
   return (
     <>
       <Hero />
@@ -82,7 +93,7 @@ const Home = () => {
 
       {/* Featured Articles Section */}
       <div className="bg-base-200 py-16">
-        <div className="max-w-screen-lg mx-auto text-left">
+        <div className="max-w-screen-lg mx-auto text-left px-4">
           <h2 className="text-2xl md:text-4xl font-light uppercase text-primary pb-12">
             Featured
           </h2>
@@ -91,102 +102,71 @@ const Home = () => {
             from the NIFC.
           </p>
 
-          {/* Articles Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Article 1 */}
-            <div className="bg-white shadow-lg rounded-none overflow-hidden">
-              <img
-                src="https://www.cigionline.org/static/images/Hanson_cigionline_FinTeh_Africa_f.2e16d0ba.fill-1600x900.jpg"
-                alt="Article 1"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <p className="text-primary font-light text-xs uppercase pb-4">
-                  3 JAN 2025
-                </p>
-                <h3 className="text-lg font-semibold mb-4">
-                  The Future of Finance in Africa
-                </h3>
-                <p className="text-neutral">
-                  Africa's financial landscape is rapidly evolving. Discover the
-                  trends shaping the future of finance and investment in the
-                  region.
-                </p>
+          {/* Loading State */}
+          {loading ? (
+            <div className="flex justify-center items-center py-20">
+              <span className="loading loading-spinner loading-lg"></span>
+            </div>
+          ) : error ? (
+            /* Error State */
+            <div className="alert alert-error mb-8">
+              <span>Error loading news: {error.message}</span>
+            </div>
+          ) : news && news.length > 0 ? (
+            /* Articles Grid - Dynamic */
+            <>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {news.map((article) => (
+                  <div key={article.id} className="bg-white shadow-lg rounded-none overflow-hidden">
+                    <img
+                      src={`${import.meta.env.VITE_BASE_URL}${article.picture}`}
+                      alt={article.title}
+                      className="w-full h-48 object-cover"
+                      onError={(e) => {
+                        e.target.src = 'https://via.placeholder.com/400x300?text=Image+Not+Available';
+                      }}
+                    />
+                    <div className="p-6">
+                      <p className="text-primary font-light text-xs uppercase pb-4">
+                        {new Date(article.created_at).toLocaleDateString('en-US', {
+                          day: 'numeric',
+                          month: 'short',
+                          year: 'numeric'
+                        })}
+                      </p>
+                      <h3 className="text-lg font-semibold mb-4">
+                        {article.title}
+                      </h3>
+                      <p className="text-neutral">
+                        {truncateText(article.content, 120)}
+                      </p>
+                      <Link
+                        to={`/news/${article.id}`}
+                        className="text-primary font-medium mt-4 inline-block"
+                      >
+                        Read More →
+                      </Link>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* View More Articles */}
+              <div className="mt-12">
                 <Link
-                  to="/article/#"
-                  className="text-primary font-medium mt-4 inline-block"
+                  to="/news"
+                  className="btn btn-primary text-white font-medium uppercase px-6 py-3"
                 >
-                  Read More →
+                  View More Articles
                 </Link>
               </div>
+            </>
+          ) : (
+            /* No Articles State */
+            <div className="text-center py-20">
+              <p className="text-neutral text-lg">No news articles available at this time.</p>
             </div>
-
-            {/* Article 2 */}
-            <div className="bg-white shadow-lg rounded-none overflow-hidden">
-              <img
-                src="https://kenyanwallstreet.com/wp-content/uploads/2022/04/nairobi-international-financial-centre.jpg"
-                alt="Article 2"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <p className="text-primary font-light text-xs uppercase pb-4">
-                  15 DEC 2024
-                </p>
-                <h3 className="text-lg font-semibold mb-4">
-                  Why Nairobi is the Business Hub of Africa
-                </h3>
-                <p className="text-neutral">
-                  Nairobi continues to attract global businesses. Learn why it's
-                  the preferred destination for investors across various
-                  industries.
-                </p>
-                <Link
-                  to="/article"
-                  className="text-primary font-medium mt-4 inline-block"
-                >
-                  Read More →
-                </Link>
-              </div>
-            </div>
-
-            {/* Article 3 */}
-            <div className="bg-white shadow-lg rounded-none overflow-hidden">
-              <img
-                src="https://www.undp.org/sites/g/files/zskgke326/files/migration/sgtechcentre/Accelerator-Lab---Kenya-5---small.jpg"
-                alt="Article 3"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <p className="text-primary font-light text-xs uppercase pb-4">
-                  7 nov 2024
-                </p>
-                <h3 className="text-lg font-semibold mb-4">
-                  Innovations Driving Growth in Kenya
-                </h3>
-                <p className="text-neutral">
-                  Kenya is at the forefront of technological and economic
-                  innovation. Explore the key drivers of growth in this dynamic
-                  market.
-                </p>
-                <Link
-                  to="/article"
-                  className="text-primary font-medium mt-4 inline-block"
-                >
-                  Read More →
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          {/* View More Articles */}
-          <div className="mt-12">
-            <Link
-              to="/press-releases"
-              className="btn btn-primary text-white font-medium uppercase px-6 py-3"
-            >
-              View More Articles
-            </Link>
-          </div>
+          )}
         </div>
       </div>
 
