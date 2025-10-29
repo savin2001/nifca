@@ -12,6 +12,17 @@ const useNewsActions = () => {
     setLoading(true);
     setError(null);
 
+    console.log('📤 === FRONTEND: Creating News ===');
+    console.log('Upload Mode:', uploadMode);
+    console.log('Form Data:', {
+      title: formData.title,
+      content: formData.content?.substring(0, 100) + '...',
+      pictureUrl: formData.pictureUrl,
+      picture: formData.picture ? `File: ${formData.picture.name}` : null,
+      post_to_twitter: formData.post_to_twitter,
+      post_to_linkedin: formData.post_to_linkedin
+    });
+
     try {
       const token = localStorage.getItem('token');
 
@@ -19,13 +30,19 @@ const useNewsActions = () => {
 
       if (uploadMode === 'url') {
         // Send as JSON with picture URL
+        const payload = {
+          title: formData.title,
+          content: formData.content,
+          picture: formData.pictureUrl,
+          post_to_twitter: formData.post_to_twitter,
+          post_to_linkedin: formData.post_to_linkedin
+        };
+
+        console.log('📨 Sending JSON payload:', payload);
+
         response = await axios.post(
           `${baseURL}/api/content/news`,
-          {
-            title: formData.title,
-            content: formData.content,
-            picture: formData.pictureUrl
-          },
+          payload,
           {
             headers: {
               'Authorization': `Bearer ${token}`,
@@ -43,6 +60,19 @@ const useNewsActions = () => {
           submitData.append('pictureFile', formData.picture);
         }
 
+        // Add social media flags if present
+        if (formData.post_to_twitter !== undefined) {
+          submitData.append('post_to_twitter', formData.post_to_twitter);
+        }
+        if (formData.post_to_linkedin !== undefined) {
+          submitData.append('post_to_linkedin', formData.post_to_linkedin);
+        }
+
+        console.log('📨 Sending FormData with fields:');
+        for (let [key, value] of submitData.entries()) {
+          console.log(`  ${key}:`, value instanceof File ? `File: ${value.name}` : value);
+        }
+
         response = await axios.post(`${baseURL}/api/content/news`, submitData, {
           headers: {
             'Authorization': `Bearer ${token}`
@@ -50,10 +80,15 @@ const useNewsActions = () => {
         });
       }
 
+      console.log('✅ Response received:', response.data);
+      console.log('📤 === FRONTEND: News Creation Complete ===\n');
+
       setLoading(false);
       return { success: true, data: response.data };
     } catch (err) {
-      console.error('Create error:', err.response?.data);
+      console.error('❌ Create error:', err.response?.data);
+      console.error('Error status:', err.response?.status);
+      console.error('Error message:', err.message);
       const errorMessage = err.response?.data?.error || err.response?.data?.message || 'Failed to create news article';
       setError(errorMessage);
       setLoading(false);
