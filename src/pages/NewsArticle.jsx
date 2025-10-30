@@ -49,9 +49,9 @@ const NewsArticle = () => {
 
   return (
     <div className="relative flex min-h-screen w-full flex-col bg-base-100">
-      <main className="flex-grow">
+      <main className="flex-grow pt-32">
         {/* Breadcrumb - Above Content */}
-        <div className="mx-auto max-w-4xl px-4 py-4 sm:py-6">
+        <div className="mx-auto max-w-4xl px-4 py-6 sm:py-8">
           <div className="flex items-center gap-2 text-sm font-medium">
             <Link to="/media" className="text-primary hover:underline transition-colors">
               News & Media

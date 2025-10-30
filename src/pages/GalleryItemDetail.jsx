@@ -92,9 +92,9 @@ const GalleryItemDetail = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-base-100">
-      <main className="flex-grow">
+      <main className="flex-grow pt-32">
         {/* Breadcrumb - Above Image */}
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
           <div className="max-w-6xl mx-auto">
             <div className="text-sm breadcrumbs">
               <ul>
