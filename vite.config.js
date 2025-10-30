@@ -9,10 +9,10 @@ export default defineConfig(({ mode }) => {
     plugins: [react()],
     server: {
       host: env.VITE_APP_HOST || 'localhost',
-      port: Number(env.VITE_APP_PORT) || 5173,
+      port: Number(env.VITE_APP_PORT) || 5174,
       proxy: {
         '/api': {
-          target: 'http://localhost:3000',
+          target: 'https://nifca-backend.onrender.com',
           changeOrigin: true,
           secure: false,
         },
